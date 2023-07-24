@@ -18,10 +18,8 @@ COPY . .
 RUN g++ -std=c++14 -g -o element_access_ringbuffer element_access_ringbuffer.cpp
 RUN g++ -std=c++14 -g -o element_access_vector element_access_vector.cpp
 RUN g++ -std=c++14 -g -o element_access_deque element_access_deque.cpp
-RUN g++ -std=c++14 -g -o element_access_list element_access_list.cpp
 
 # Default command to run the benchmark under Valgrind and output results to a file
-CMD valgrind --tool=massif --massif-out-file=/output/massif.out ./element_access_ringbuffer && \
+CMD valgrind --tool=massif --massif-out-file=/output/massif.out.ringbuffer ./element_access_ringbuffer && \
 valgrind --tool=massif --massif-out-file=/output/massif.out.vector ./element_access_vector && \
-valgrind --tool=massif --massif-out-file=/output/massif.out.vector ./element_access_deque && \
-valgrind --tool=massif --massif-out-file=/output/massif.out.vector ./element_access_list
+valgrind --tool=massif --massif-out-file=/output/massif.out.deque ./element_access_deque && \

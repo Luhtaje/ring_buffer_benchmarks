@@ -567,7 +567,14 @@ public:
     /// @exception If any exception is thrown the buffer will be in a valid but unexpected state. (Basic exception guarantee).
     /// @details Linear complexity in relation to the size of the range (O(n)).
     /// @note Behavior is undefined if elements in range are not valid.
-    template<typename InputIt>
+    template<typename InputIt,
+        typename = typename std::enable_if_t<
+                std::is_base_of<
+                    std::input_iterator_tag, 
+                    typename std::iterator_traits<InputIt>::iterator_category
+                >::value
+            >
+        >
     ring_buffer(InputIt beginIt, InputIt endIt) : m_tailIndex(0) , m_headIndex(0)
     {
         const auto size = std::distance<InputIt>(beginIt , endIt);

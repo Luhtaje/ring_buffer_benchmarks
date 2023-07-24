@@ -5,5 +5,24 @@ The topics have been chosen by listing the pro's and con's of each container and
 In other words the benchmarks test what the existing containers are good or bad in.
 
 Current topics to test the containers are:
-Accessing elements: Random access (sequential and random), different size containers
-                    Border access, different size containers.
+Accessing elements: Random access
+
+Buffer memory footprint: Empty buffer, large buffer.
+
+Buffer reallocation: Logarithmic test for size.
+
+
+DISADVANTAGES OF VECTOR:
+- Reallocation, if buffer gets full a reallocation is needed.
+- Insertions/Deletions to middle of vector can take super long amounts of time in larger containers.
+
+DISADVANTAGES OF DEQUE:
+- Due to not having continguous memory, iterating might not be that cache friendly.
+- Slightly larger overhead.
+- Insertions/ deletions in middle. (Somewhat faster than vector.)
+
+DISADVANTAGES OF LIST:
+- Memory overhead, every element needs additional linkage (prev and next pointer) information.
+- Non-contiguous memory, slower to iterate through 
+- No random access.
+- Slighty more complex API?
