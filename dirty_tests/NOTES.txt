@@ -1,0 +1,66 @@
+It is wednesday, final week of vacation and I have done some optimizations and benchmarking.
+
+I have been benchmarking reserve and found out that the buffer reserves memory faster when the buffer size is small,
+but it increases exponentially when the buffer size goes over 40k give or take some thousands (time gets insane
+compared to vector.)
+
+jere@Mylly:~/projects/test$ ./test_reserve
+2023-08-02T17:10:56+03:00
+Running ./test_reserve
+Run on (16 X 4524.61 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 512 KiB (x8)
+  L3 Unified 16384 KiB (x2)
+Load Average: 0.16, 0.27, 0.26
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+-------------------------------------------------------------------
+Benchmark                         Time             CPU   Iterations
+-------------------------------------------------------------------
+BM_reserve_buffer/2000         5109 ns         5108 ns       136795
+BM_reserve_buffer/4096        15893 ns        15892 ns        44110
+BM_reserve_buffer/32768   553967567 ns    553944882 ns            1
+BM_reserve_buffer/160000 2531588287 ns   2531520924 ns            1
+BM_reserve_vector/2000        15532 ns        15532 ns        44457
+BM_reserve_vector/4096        47870 ns        47868 ns        14263
+BM_reserve_vector/32768      500147 ns       500121 ns         1000
+BM_reserve_vector/160000    2473045 ns      2472938 ns          278
+
+
+
+======================================================CODE==================================================
+#include "ring_buffer.hpp"
+#include <benchmark/benchmark.h>
+
+    ring_buffer<size_t> buffer(1000);
+    std::vector<size_t> vec(1000);
+
+static void BM_reserve_buffer(benchmark::State& state) 
+{
+    for(auto _ : state)
+    {
+        for(auto i = 1001; i < state.range(0); i++)
+        {
+            buffer.reserve(i);
+        }
+    }
+}
+
+static void BM_reserve_vector(benchmark::State& state) 
+{
+    for(auto _ : state)
+    {
+        for(auto i = 1001; i < state.range(0); i++)
+        {
+            vec.reserve(i);
+        }
+    }
+}
+
+BENCHMARK(BM_reserve_buffer)->Range(1, 1 << 16);
+BENCHMARK(BM_reserve_vector)->Range(1, 1 << 16);
+
+BENCHMARK_MAIN();
+
+
