@@ -1,0 +1,899 @@
+desc: --massif-out-file=/output/massif.out.memory.deque
+cmd: ./memory_deque
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2268669
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2269839
+mem_heap_B=78976
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2271051
+mem_heap_B=94848
+mem_heap_extra_B=264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2272299
+mem_heap_B=111232
+mem_heap_extra_B=520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2273547
+mem_heap_B=127616
+mem_heap_extra_B=776
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2274171
+mem_heap_B=135808
+mem_heap_extra_B=904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2274795
+mem_heap_B=144000
+mem_heap_extra_B=1032
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2275419
+mem_heap_B=152192
+mem_heap_extra_B=1160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2276043
+mem_heap_B=160384
+mem_heap_extra_B=1288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2276667
+mem_heap_B=168576
+mem_heap_extra_B=1416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2277525
+mem_heap_B=179840
+mem_heap_extra_B=1592
+mem_stacks_B=0
+heap_tree=detailed
+n3: 179840 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 100864 0x109199: allocate (new_allocator.h:114)
+  n1: 100864 0x109199: allocate (alloc_traits.h:443)
+   n1: 100864 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 100864 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 100864 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 100864 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 100864 0x109199: deque (stl_deque.h:949)
+        n0: 100864 0x109199: main (memory_deque.cpp:5)
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6272 0x109177: allocate (new_allocator.h:114)
+  n1: 6272 0x109177: allocate (alloc_traits.h:443)
+   n1: 6272 0x109177: _M_allocate_map (stl_deque.h:634)
+    n1: 6272 0x109177: _M_initialize_map (stl_deque.h:707)
+     n1: 6272 0x109177: _Deque_base (stl_deque.h:518)
+      n1: 6272 0x109177: deque (stl_deque.h:949)
+       n0: 6272 0x109177: main (memory_deque.cpp:5)
+#-----------
+snapshot=12
+#-----------
+time=2278149
+mem_heap_B=188032
+mem_heap_extra_B=1720
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=2278773
+mem_heap_B=196224
+mem_heap_extra_B=1848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=2279397
+mem_heap_B=204416
+mem_heap_extra_B=1976
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=2280021
+mem_heap_B=212608
+mem_heap_extra_B=2104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=2280645
+mem_heap_B=220800
+mem_heap_extra_B=2232
+mem_stacks_B=0
+heap_tree=detailed
+n3: 220800 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 141824 0x109199: allocate (new_allocator.h:114)
+  n1: 141824 0x109199: allocate (alloc_traits.h:443)
+   n1: 141824 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 141824 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 141824 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 141824 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 141824 0x109199: deque (stl_deque.h:949)
+        n0: 141824 0x109199: main (memory_deque.cpp:5)
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6272 0x109177: allocate (new_allocator.h:114)
+  n1: 6272 0x109177: allocate (alloc_traits.h:443)
+   n1: 6272 0x109177: _M_allocate_map (stl_deque.h:634)
+    n1: 6272 0x109177: _M_initialize_map (stl_deque.h:707)
+     n1: 6272 0x109177: _Deque_base (stl_deque.h:518)
+      n1: 6272 0x109177: deque (stl_deque.h:949)
+       n0: 6272 0x109177: main (memory_deque.cpp:5)
+#-----------
+snapshot=17
+#-----------
+time=2281269
+mem_heap_B=228992
+mem_heap_extra_B=2360
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2281893
+mem_heap_B=237184
+mem_heap_extra_B=2488
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=2282517
+mem_heap_B=245376
+mem_heap_extra_B=2616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=2283141
+mem_heap_B=253568
+mem_heap_extra_B=2744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=2283765
+mem_heap_B=261760
+mem_heap_extra_B=2872
+mem_stacks_B=0
+heap_tree=detailed
+n3: 261760 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 182784 0x109199: allocate (new_allocator.h:114)
+  n1: 182784 0x109199: allocate (alloc_traits.h:443)
+   n1: 182784 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 182784 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 182784 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 182784 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 182784 0x109199: deque (stl_deque.h:949)
+        n0: 182784 0x109199: main (memory_deque.cpp:5)
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6272 0x109177: allocate (new_allocator.h:114)
+  n1: 6272 0x109177: allocate (alloc_traits.h:443)
+   n1: 6272 0x109177: _M_allocate_map (stl_deque.h:634)
+    n1: 6272 0x109177: _M_initialize_map (stl_deque.h:707)
+     n1: 6272 0x109177: _Deque_base (stl_deque.h:518)
+      n1: 6272 0x109177: deque (stl_deque.h:949)
+       n0: 6272 0x109177: main (memory_deque.cpp:5)
+#-----------
+snapshot=22
+#-----------
+time=2284389
+mem_heap_B=269952
+mem_heap_extra_B=3000
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=2285013
+mem_heap_B=278144
+mem_heap_extra_B=3128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=2285637
+mem_heap_B=286336
+mem_heap_extra_B=3256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=2286261
+mem_heap_B=294528
+mem_heap_extra_B=3384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2286885
+mem_heap_B=302720
+mem_heap_extra_B=3512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=2287509
+mem_heap_B=310912
+mem_heap_extra_B=3640
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=2288133
+mem_heap_B=319104
+mem_heap_extra_B=3768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=2288757
+mem_heap_B=327296
+mem_heap_extra_B=3896
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=2289381
+mem_heap_B=335488
+mem_heap_extra_B=4024
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=2290005
+mem_heap_B=343680
+mem_heap_extra_B=4152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2290629
+mem_heap_B=351872
+mem_heap_extra_B=4280
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2291253
+mem_heap_B=360064
+mem_heap_extra_B=4408
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2291877
+mem_heap_B=368256
+mem_heap_extra_B=4536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2292501
+mem_heap_B=376448
+mem_heap_extra_B=4664
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2293125
+mem_heap_B=384640
+mem_heap_extra_B=4792
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2293749
+mem_heap_B=392832
+mem_heap_extra_B=4920
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2294373
+mem_heap_B=401024
+mem_heap_extra_B=5048
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2294997
+mem_heap_B=409216
+mem_heap_extra_B=5176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2295621
+mem_heap_B=417408
+mem_heap_extra_B=5304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2296245
+mem_heap_B=425600
+mem_heap_extra_B=5432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2296869
+mem_heap_B=433792
+mem_heap_extra_B=5560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2297493
+mem_heap_B=441984
+mem_heap_extra_B=5688
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2298117
+mem_heap_B=450176
+mem_heap_extra_B=5816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2298741
+mem_heap_B=458368
+mem_heap_extra_B=5944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2299365
+mem_heap_B=466560
+mem_heap_extra_B=6072
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2300301
+mem_heap_B=478848
+mem_heap_extra_B=6264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2405058
+mem_heap_B=479360
+mem_heap_extra_B=6272
+mem_stacks_B=0
+heap_tree=peak
+n3: 479360 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 400384 0x109199: allocate (new_allocator.h:114)
+  n1: 400384 0x109199: allocate (alloc_traits.h:443)
+   n1: 400384 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 400384 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 400384 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 400384 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 400384 0x109199: deque (stl_deque.h:949)
+        n0: 400384 0x109199: main (memory_deque.cpp:5)
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6272 0x109177: allocate (new_allocator.h:114)
+  n1: 6272 0x109177: allocate (alloc_traits.h:443)
+   n1: 6272 0x109177: _M_allocate_map (stl_deque.h:634)
+    n1: 6272 0x109177: _M_initialize_map (stl_deque.h:707)
+     n1: 6272 0x109177: _Deque_base (stl_deque.h:518)
+      n1: 6272 0x109177: deque (stl_deque.h:949)
+       n0: 6272 0x109177: main (memory_deque.cpp:5)
+#-----------
+snapshot=49
+#-----------
+time=2405388
+mem_heap_B=473728
+mem_heap_extra_B=6184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2406015
+mem_heap_B=464000
+mem_heap_extra_B=6032
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2406642
+mem_heap_B=454272
+mem_heap_extra_B=5880
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2407269
+mem_heap_B=444544
+mem_heap_extra_B=5728
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2407896
+mem_heap_B=434816
+mem_heap_extra_B=5576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2408523
+mem_heap_B=425088
+mem_heap_extra_B=5424
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=2409150
+mem_heap_B=415360
+mem_heap_extra_B=5272
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2409777
+mem_heap_B=405632
+mem_heap_extra_B=5120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2410404
+mem_heap_B=395904
+mem_heap_extra_B=4968
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2411031
+mem_heap_B=386176
+mem_heap_extra_B=4816
+mem_stacks_B=0
+heap_tree=detailed
+n3: 386176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 307200 0x109199: allocate (new_allocator.h:114)
+  n1: 307200 0x109199: allocate (alloc_traits.h:443)
+   n1: 307200 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 307200 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 307200 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 307200 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 307200 0x109199: deque (stl_deque.h:949)
+        n0: 307200 0x109199: main (memory_deque.cpp:5)
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6272 0x109177: allocate (new_allocator.h:114)
+  n1: 6272 0x109177: allocate (alloc_traits.h:443)
+   n1: 6272 0x109177: _M_allocate_map (stl_deque.h:634)
+    n1: 6272 0x109177: _M_initialize_map (stl_deque.h:707)
+     n1: 6272 0x109177: _Deque_base (stl_deque.h:518)
+      n1: 6272 0x109177: deque (stl_deque.h:949)
+       n0: 6272 0x109177: main (memory_deque.cpp:5)
+#-----------
+snapshot=59
+#-----------
+time=2411658
+mem_heap_B=376448
+mem_heap_extra_B=4664
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=2412285
+mem_heap_B=366720
+mem_heap_extra_B=4512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2412912
+mem_heap_B=356992
+mem_heap_extra_B=4360
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2413539
+mem_heap_B=347264
+mem_heap_extra_B=4208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2414166
+mem_heap_B=337536
+mem_heap_extra_B=4056
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2414793
+mem_heap_B=327808
+mem_heap_extra_B=3904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=2415420
+mem_heap_B=318080
+mem_heap_extra_B=3752
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=2416047
+mem_heap_B=308352
+mem_heap_extra_B=3600
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2416674
+mem_heap_B=298624
+mem_heap_extra_B=3448
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2417301
+mem_heap_B=288896
+mem_heap_extra_B=3296
+mem_stacks_B=0
+heap_tree=detailed
+n3: 288896 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 209920 0x109199: allocate (new_allocator.h:114)
+  n1: 209920 0x109199: allocate (alloc_traits.h:443)
+   n1: 209920 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 209920 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 209920 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 209920 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 209920 0x109199: deque (stl_deque.h:949)
+        n0: 209920 0x109199: main (memory_deque.cpp:5)
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6272 0x109177: allocate (new_allocator.h:114)
+  n1: 6272 0x109177: allocate (alloc_traits.h:443)
+   n1: 6272 0x109177: _M_allocate_map (stl_deque.h:634)
+    n1: 6272 0x109177: _M_initialize_map (stl_deque.h:707)
+     n1: 6272 0x109177: _Deque_base (stl_deque.h:518)
+      n1: 6272 0x109177: deque (stl_deque.h:949)
+       n0: 6272 0x109177: main (memory_deque.cpp:5)
+#-----------
+snapshot=69
+#-----------
+time=2417928
+mem_heap_B=279168
+mem_heap_extra_B=3144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=2418555
+mem_heap_B=269440
+mem_heap_extra_B=2992
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=2419182
+mem_heap_B=259712
+mem_heap_extra_B=2840
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=2419809
+mem_heap_B=249984
+mem_heap_extra_B=2688
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=2420436
+mem_heap_B=240256
+mem_heap_extra_B=2536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=2421063
+mem_heap_B=230528
+mem_heap_extra_B=2384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=2421690
+mem_heap_B=220800
+mem_heap_extra_B=2232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=2422317
+mem_heap_B=211072
+mem_heap_extra_B=2080
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=2422944
+mem_heap_B=201344
+mem_heap_extra_B=1928
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=2423571
+mem_heap_B=191616
+mem_heap_extra_B=1776
+mem_stacks_B=0
+heap_tree=detailed
+n3: 191616 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 112640 0x109199: allocate (new_allocator.h:114)
+  n1: 112640 0x109199: allocate (alloc_traits.h:443)
+   n1: 112640 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 112640 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 112640 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 112640 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 112640 0x109199: deque (stl_deque.h:949)
+        n0: 112640 0x109199: main (memory_deque.cpp:5)
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6272 0x109177: allocate (new_allocator.h:114)
+  n1: 6272 0x109177: allocate (alloc_traits.h:443)
+   n1: 6272 0x109177: _M_allocate_map (stl_deque.h:634)
+    n1: 6272 0x109177: _M_initialize_map (stl_deque.h:707)
+     n1: 6272 0x109177: _Deque_base (stl_deque.h:518)
+      n1: 6272 0x109177: deque (stl_deque.h:949)
+       n0: 6272 0x109177: main (memory_deque.cpp:5)
+#-----------
+snapshot=79
+#-----------
+time=2424198
+mem_heap_B=181888
+mem_heap_extra_B=1624
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=2424825
+mem_heap_B=172160
+mem_heap_extra_B=1472
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=2425452
+mem_heap_B=162432
+mem_heap_extra_B=1320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=2426079
+mem_heap_B=152704
+mem_heap_extra_B=1168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=2426706
+mem_heap_B=142976
+mem_heap_extra_B=1016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=2427333
+mem_heap_B=133248
+mem_heap_extra_B=864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=2427960
+mem_heap_B=123520
+mem_heap_extra_B=712
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=2428587
+mem_heap_B=113792
+mem_heap_extra_B=560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=2429214
+mem_heap_B=104064
+mem_heap_extra_B=408
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=2429841
+mem_heap_B=94336
+mem_heap_extra_B=256
+mem_stacks_B=0
+heap_tree=detailed
+n3: 94336 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15360 0x109199: allocate (new_allocator.h:114)
+  n1: 15360 0x109199: allocate (alloc_traits.h:443)
+   n1: 15360 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 15360 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 15360 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 15360 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 15360 0x109199: deque (stl_deque.h:949)
+        n0: 15360 0x109199: main (memory_deque.cpp:5)
+ n1: 6272 0x109177: allocate (new_allocator.h:114)
+  n1: 6272 0x109177: allocate (alloc_traits.h:443)
+   n1: 6272 0x109177: _M_allocate_map (stl_deque.h:634)
+    n1: 6272 0x109177: _M_initialize_map (stl_deque.h:707)
+     n1: 6272 0x109177: _Deque_base (stl_deque.h:518)
+      n1: 6272 0x109177: deque (stl_deque.h:949)
+       n0: 6272 0x109177: main (memory_deque.cpp:5)
+#-----------
+snapshot=89
+#-----------
+time=2430468
+mem_heap_B=84608
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=2436789
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

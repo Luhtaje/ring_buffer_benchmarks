@@ -17,8 +17,12 @@ COPY . .
 # Build the benchmark program
 RUN g++ -std=c++14 -g -O3 -o memory_buffer memory_buffer.cpp
 RUN g++ -std=c++14 -g -O3 -o memory_vector memory_vector.cpp
+RUN g++ -std=c++14 -g -O3 -o memory_deque memory_deque.cpp
+RUN g++ -std=c++14 -g -O3 -o memory_list memory_list.cpp
 
 
 # Default command to run the benchmark under Valgrind and output results to a file
 CMD valgrind --tool=massif --massif-out-file=/output/massif.out.memory.buffer ./memory_buffer && \
-valgrind --tool=massif --massif-out-file=/output/massif.out.memory.vector ./memory_vector
+valgrind --tool=massif --massif-out-file=/output/massif.out.memory.vector ./memory_vector && \
+valgrind --tool=massif --massif-out-file=/output/massif.out.memory.deque ./memory_deque && \
+valgrind --tool=massif --massif-out-file=/output/massif.out.memory.list ./memory_list

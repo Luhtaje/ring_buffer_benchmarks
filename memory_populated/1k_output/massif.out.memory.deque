@@ -1,0 +1,211 @@
+desc: --massif-out-file=/output/massif.out.memory.deque
+cmd: ./memory_deque
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2268669
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2269839
+mem_heap_B=72784
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2269881
+mem_heap_B=73296
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2269920
+mem_heap_B=73808
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2269959
+mem_heap_B=74320
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2269998
+mem_heap_B=74832
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2270037
+mem_heap_B=75344
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2270076
+mem_heap_B=75856
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2270115
+mem_heap_B=76368
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=detailed
+n3: 76368 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 3584 0x109199: allocate (new_allocator.h:114)
+  n1: 3584 0x109199: allocate (alloc_traits.h:443)
+   n1: 3584 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 3584 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 3584 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 3584 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 3584 0x109199: deque (stl_deque.h:949)
+        n0: 3584 0x109199: main (memory_deque.cpp:5)
+ n0: 80 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=2270154
+mem_heap_B=76880
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2271254
+mem_heap_B=76880
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=peak
+n3: 76880 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 4096 0x109199: allocate (new_allocator.h:114)
+  n1: 4096 0x109199: allocate (alloc_traits.h:443)
+   n1: 4096 0x109199: _M_allocate_node (stl_deque.h:620)
+    n1: 4096 0x109199: _M_create_nodes (stl_deque.h:745)
+     n1: 4096 0x109199: _M_initialize_map (stl_deque.h:719)
+      n1: 4096 0x109199: _Deque_base (stl_deque.h:518)
+       n1: 4096 0x109199: deque (stl_deque.h:949)
+        n0: 4096 0x109199: main (memory_deque.cpp:5)
+ n0: 80 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=2271254
+mem_heap_B=76368
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=2271287
+mem_heap_B=75856
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=2271320
+mem_heap_B=75344
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=2271353
+mem_heap_B=74832
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=2271386
+mem_heap_B=74320
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=2271419
+mem_heap_B=73808
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2271452
+mem_heap_B=73296
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=2271485
+mem_heap_B=72784
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=2271517
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=2277443
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n1: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 0 in 3 places, all below massif's threshold (1.00%)

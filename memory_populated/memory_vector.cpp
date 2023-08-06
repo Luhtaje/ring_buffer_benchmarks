@@ -2,6 +2,5 @@
 
 int main()
 {
-    std::vector<int> vec(1000, 1);
-    vec.reserve(1500);
+    std::vector<int> vec(100000, 1);
 }
