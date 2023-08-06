@@ -1,0 +1,80 @@
+desc: --massif-out-file=/output/massif.out.memory.buffer
+cmd: ./memory_buffer
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2268102
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2269277
+mem_heap_B=76712
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2279316
+mem_heap_B=82712
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2287356
+mem_heap_B=82712
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=peak
+n3: 82712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6000 0x1091C8: allocate (new_allocator.h:114)
+  n1: 6000 0x1091C8: reserve (ring_buffer.hpp:1215)
+   n1: 6000 0x1091C8: reserve (ring_buffer.hpp:1201)
+    n0: 6000 0x1091C8: main (memory_buffer.cpp:6)
+ n1: 4008 0x1090F9: allocate (new_allocator.h:114)
+  n1: 4008 0x1090F9: ring_buffer (ring_buffer.hpp:538)
+   n0: 4008 0x1090F9: main (memory_buffer.cpp:5)
+#-----------
+snapshot=5
+#-----------
+time=2287356
+mem_heap_B=78704
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2287386
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2293314
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
