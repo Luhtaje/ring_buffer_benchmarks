@@ -6,6 +6,7 @@
 #include <limits>
 #include <utility>
 #include <stdexcept>
+#include <cstring>
 
 namespace
 {
@@ -256,6 +257,7 @@ public:
         reference operator*() const noexcept
         {
             return (*m_container)[m_logicalIndex];
+
         }
 
         /// @brief Returns the logical index of the element the iterator is pointing to.
@@ -305,7 +307,7 @@ public:
         reference operator*() const noexcept
         {
             //TODO: bounds checking and value-initialization.
-            return const_cast<reference>(_rBuf_const_iterator<_rBuf>::operator*());
+            return (*(const_cast<_rBuf*>(_rBuf_const_iterator<_rBuf>::m_container)))[_rBuf_const_iterator<_rBuf>::m_logicalIndex];
         }
 
         /// @brief Arrow operator. 
@@ -809,9 +811,14 @@ public:
         validateCapacity(1);
 
         iterator it(this, pos.getIndex());
-        m_allocator.construct(&*end(), std::forward<Args>(args)...);
+
+        m_allocator.construct(&*end());
+        std::move_backward(it, end() - 1, end());
+
+        // TODO room for improvement here I think, but should suffice to show if this is works.
+        m_allocator.destroy(&*it);
+        m_allocator.construct(&*it, std::forward<Args>(args)...);
         increment(m_headIndex);
-        std::rotate(it, end() - 1, end());
 
         return it;
     }
@@ -1096,7 +1103,6 @@ public:
         swap(m_tailIndex, other.m_tailIndex);
         swap(m_capacity, other.m_capacity);
         swap(m_allocator, other.m_allocator);
-
     }
 
     /// @brief Friend swap.
@@ -1512,21 +1518,38 @@ private:
     template<typename InsertValue>
     iterator insertBase(const_iterator pos, const size_type amount, InsertValue&& value)
     {
-        iterator it(this, pos.getIndex());
 
         if (!amount) return it;
 
         validateCapacity(amount);
+        const auto posIndex = pos.getIndex();
+        
+        iterator it(this, posIndex);
 
-        for (size_type i = 0; i < amount; i++)
+        if(std::is_trivially_copyable<value_type>::value)
         {
-            // Construct element at the end.
-            m_allocator.construct(&*end(), std::forward<InsertValue>(value));
-            increment(m_headIndex);
+            // Do move
         }
+        else
+        {
 
-        // Rotate elements from the back into pos.
-        std::rotate(it, end() - amount, end());
+            for (size_type i = 0; i < amount; i++)
+            {
+                // Initialize elements
+                m_allocator.construct(&*end());
+                increment(m_headIndex);
+            }
+
+            // Rotate elements to make room for new elements.
+            std::move_backward(it, end() - amount, end());
+
+            // Assign elements
+            for (size_type i = 0; i < amount; i++)
+            {
+                *(it + i) = std::forward<InsertValue>(value);
+            }
+        }
+        
 
         return it;
     }
@@ -1547,15 +1570,79 @@ private:
     {
         const auto amount = std::distance<InputIt>(rangeBegin, rangeEnd);
         validateCapacity(amount);
+
+        const auto posIndex = pos.getIndex();
+        iterator it(this, posIndex);
         
-        for (; rangeBegin != rangeEnd; rangeBegin++)
+        // Use memmove to move elements to create space to insert.
+        if (std::is_trivially_copyable<value_type>::value)
         {
-            m_allocator.construct(&*end(), *rangeBegin);
-            increment(m_headIndex);
+            // Normal case, buffer is in a simple state.
+            if(m_headIndex > m_tailIndex )
+            {
+                // Construct empty elements at the end.
+                for (size_t i = 0; i < amount ; i++)
+                {
+                    m_allocator.construct(m_data + m_headIndex);
+                    increment(m_headIndex);
+                }
+                
+                // Move the trailing elements from the breaking point by amount elements.
+                std::memmove(m_data + m_tailIndex + posIndex + amount, m_data + m_tailIndex + posIndex, (size() - posIndex) * sizeof(value_type)); 
+            }
+            else
+            {
+                // Distance from the physical end of the buffer. Negative value means the insert positions distance is from the end of the buffer, positive means it has wrapped and is near beginning.
+                const int distanceFromBorder = m_tailIndex + posIndex - m_capacity;
+                if (distanceFromBorder < 0)
+                {
+                    const auto initialTail = m_tailIndex;
+
+                    for (size_t i = 0; i < amount ; i++)
+                    {
+                        // Construct empty elements in the tail.
+                        auto tempIndex = m_tailIndex;
+                        decrement(tempIndex);
+                        m_allocator.construct(m_data + tempIndex);
+                        m_tailIndex = tempIndex;
+                        
+                        std::memcpy(m_data + m_tailIndex, m_data + initialTail + i, sizeof(value_type)); 
+                    }
+                }
+                // Posindex is at the beginning of physical memory layout. This part can be handled as a separate system that is "rightside up".
+                else
+                {
+                    const auto initialHead = m_headIndex;
+
+                    // Construct empty elements in the head.
+                    for (size_t i = 0; i < amount ; i++)
+                    {
+                        m_allocator.construct(m_data + m_headIndex);
+                        increment(m_headIndex);
+                    }
+                    
+                    std::memmove(m_data + (initialHead - distanceFromBorder), m_data + distanceFromBorder, (initialHead - distanceFromBorder)* sizeof(value_type));
+                }
+            }
+        }
+        else
+        {
+            // Construct empty elements at the end.
+            for (size_t i = 0; i < amount; i++)
+            {
+                m_allocator.construct(m_data + m_headIndex);
+                increment(m_headIndex);
+            }
+
+            // value_type is not trivially copyable, need to do slow operation.
+            std::move_backward(it, end() - amount, end());
         }
 
-        iterator it(this, pos.getIndex());
-        std::rotate(it, end() - amount, end());
+        // Assign the elements to the new memory slots.
+        for (size_t i = 0; i < amount; i++)
+        {
+            *(it + i) = *(rangeBegin + i);
+        }
 
         return it;
     }
