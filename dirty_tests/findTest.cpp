@@ -99,11 +99,11 @@ static void BM_find_if_not_vector(benchmark::State& state)
 }
 
 BENCHMARK(BM_find_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_find_vector)->Range(1, 1 << 6);
-BENCHMARK(BM_find_if_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_find_if_vector)->Range(1, 1 << 6);
-BENCHMARK(BM_find_if_not_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_find_if_not_vector)->Range(1, 1 << 6);
+// BENCHMARK(BM_find_vector)->Range(1, 1 << 6);
+// BENCHMARK(BM_find_if_buffer)->Range(1, 1 << 6);
+// BENCHMARK(BM_find_if_vector)->Range(1, 1 << 6);
+// BENCHMARK(BM_find_if_not_buffer)->Range(1, 1 << 6);
+// BENCHMARK(BM_find_if_not_vector)->Range(1, 1 << 6);
 
 
 
