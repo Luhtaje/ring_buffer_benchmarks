@@ -79,7 +79,7 @@ static void BM_find_if_not_buffer(benchmark::State& state)
     {
         for(auto i = 1001; i < state.range(0); i++)
         {
-            std::find_if(find_if_not_buffer.begin(), find_if_not_buffer.end(), pred);
+            std::find_if_not(find_if_not_buffer.begin(), find_if_not_buffer.end(), pred);
         }
     }
 }
@@ -99,11 +99,11 @@ static void BM_find_if_not_vector(benchmark::State& state)
 }
 
 BENCHMARK(BM_find_buffer)->Range(1, 1 << 6);
-// BENCHMARK(BM_find_vector)->Range(1, 1 << 6);
-// BENCHMARK(BM_find_if_buffer)->Range(1, 1 << 6);
-// BENCHMARK(BM_find_if_vector)->Range(1, 1 << 6);
-// BENCHMARK(BM_find_if_not_buffer)->Range(1, 1 << 6);
-// BENCHMARK(BM_find_if_not_vector)->Range(1, 1 << 6);
+BENCHMARK(BM_find_vector)->Range(1, 1 << 6);
+BENCHMARK(BM_find_if_buffer)->Range(1, 1 << 6);
+BENCHMARK(BM_find_if_vector)->Range(1, 1 << 6);
+BENCHMARK(BM_find_if_not_buffer)->Range(1, 1 << 6);
+BENCHMARK(BM_find_if_not_vector)->Range(1, 1 << 6);
 
 
 

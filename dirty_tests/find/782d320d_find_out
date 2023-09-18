@@ -1,0 +1,21 @@
+-------------------------------------------------------------------
+Benchmark                         Time             CPU   Iterations
+-------------------------------------------------------------------
+BM_find_buffer/1               3.72 ns         3.72 ns    188136357
+BM_find_buffer/8               3.72 ns         3.72 ns    187995442
+BM_find_buffer/64              3.72 ns         3.72 ns    187958658
+BM_find_vector/1               3.73 ns         3.73 ns    187942192
+BM_find_vector/8               3.72 ns         3.72 ns    187942006
+BM_find_vector/64              3.72 ns         3.72 ns    187937434
+BM_find_if_buffer/1            3.96 ns         3.96 ns    176913237
+BM_find_if_buffer/8            3.96 ns         3.96 ns    176932094
+BM_find_if_buffer/64           3.96 ns         3.96 ns    176641109
+BM_find_if_vector/1            3.96 ns         3.96 ns    176933637
+BM_find_if_vector/8            3.94 ns         3.94 ns    176909858
+BM_find_if_vector/64           4.00 ns         4.00 ns    126689995
+BM_find_if_not_buffer/1        3.71 ns         3.71 ns    188811598
+BM_find_if_not_buffer/8        3.70 ns         3.70 ns    189021595
+BM_find_if_not_buffer/64       3.71 ns         3.71 ns    189063529
+BM_find_if_not_vector/1        3.98 ns         3.98 ns    178064745
+BM_find_if_not_vector/8        3.93 ns         3.93 ns    177966691
+BM_find_if_not_vector/64       3.94 ns         3.94 ns    178180045
