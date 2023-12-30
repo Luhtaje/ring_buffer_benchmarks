@@ -1,2 +1,7 @@
 *.json
-dirty_tests/ring_buffer.hpp
+include/**
+
+dirty_tests/CMakeCache.txt
+dirty_tests/CMakeFiles/
+dirty_tests/Makefile
+dirty_tests/cmake_install.cmake

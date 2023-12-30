@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/dirty_benchmark.dir/benchmark_main.cpp.o -o dirty_benchmark  ../lib/libgtest_main.a ../external/benchmark/src/libbenchmark.a ../lib/libgtest.a -lrt 
