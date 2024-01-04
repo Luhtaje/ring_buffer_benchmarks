@@ -224,7 +224,7 @@ static void BM_insert_shuffled_end_buffer(benchmark::State& state)
     }
 }
 
-static void BM_insert_shuffled_middle_low_buffer(benchmark::State& state) 
+static void BM_insert_shuffled_middle_buffer(benchmark::State& state) 
 {
     ring_buffer<size_t>::iterator posIt(&shuffled_middle_low_buffer, shuffled_middle_low_buffer.size() / 2 - 1);
     for(auto _ : state )
@@ -236,18 +236,6 @@ static void BM_insert_shuffled_middle_low_buffer(benchmark::State& state)
     }
 }
 
-
-static void BM_insert_shuffled_middle_high_buffer(benchmark::State& state) 
-{
-    ring_buffer<size_t>::iterator posIt(&shuffled_middle_high_buffer, shuffled_middle_high_buffer.size() / 2 + 1);
-    for(auto _ : state )
-    {
-        for(auto i = 0; i < state.range(0); i++)
-        {
-            shuffled_middle_high_buffer.insert(posIt, i);
-        }
-    }
-}
 
 BENCHMARK(BM_insert_small_begin_buffer)->Range(1, 1 << 6);
 BENCHMARK(BM_insert_small_begin_vector)->Range(1, 1 << 6);
@@ -266,5 +254,4 @@ BENCHMARK(BM_insert_large_end_vector)->Range(1, 1 << 6);
 
 BENCHMARK(BM_insert_shuffled_begin_buffer)->Range(1, 1 << 6);
 BENCHMARK(BM_insert_shuffled_end_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_insert_shuffled_middle_low_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_insert_shuffled_middle_high_buffer)->Range(1, 1 << 6);
+BENCHMARK(BM_insert_shuffled_middle_buffer)->Range(1, 1 << 6);
