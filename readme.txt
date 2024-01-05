@@ -34,16 +34,18 @@ Currently the build process covers only the dirty_tests
 
     copy the ring_buffer.hpp to
     ```bash
-    ring_buffer_benchmarks/dirty_tests/include
+    ring_buffer_benchmarks/dirty_tests/include/
 
 
 4. **Build the project**
 
     ```bash 
+    mkdir build
+    cd build
     cmake ..
     (make)
 
-Build outputs to dirty_tests/tests
+Build outputs to /tests
 
 5. **RunTests**
 
