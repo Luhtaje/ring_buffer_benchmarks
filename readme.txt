@@ -15,19 +15,18 @@ This project utilizes CMake and includes git submodules. Follow these steps to b
    git clone --recurse-submodules <repository-url>
    ```
 
-Alternatively, you can initialize and uptade the submodules separately
-
-```
-git submodule init
-git submodule update
-```
+   Alternatively, you can initialize and uptade the submodules separately
+   
+   ```
+   git submodule init
+   git submodule update
+   ```
 
 Currently the build process covers only the dirty_tests
 
 2. **CD into dirty_tests**
-
-    ```
-    cd ring_buffer_benchmarks/dirty_tests
+   ```
+   cd ring_buffer_benchmarks/dirty_tests
    ```
 
 3. **Get the ring_buffer header**
@@ -39,7 +38,7 @@ Currently the build process covers only the dirty_tests
 
     ```
     ring_buffer_benchmarks/dirty_tests/include/
-   ```
+    ```
 
 
 4. **Build the project**
@@ -49,7 +48,7 @@ Currently the build process covers only the dirty_tests
     cd build
     cmake ..
     (make)
-   ```
+    ```
 
 Build outputs to /tests
 
@@ -58,5 +57,5 @@ Build outputs to /tests
     ```
     cd tests
     ./dirty_benchmark
-   ```
+    ```
 
