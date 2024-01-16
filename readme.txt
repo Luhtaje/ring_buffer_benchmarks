@@ -12,20 +12,20 @@ This project utilizes CMake and includes git submodules. Follow these steps to b
 1. **Clone the Project and Update Submodules:**
 
    ```bash
-   git clone --recurse-submodules <repository-url>
+   git clone --recurse-submodules <repository-url>```
 
 Alternatively, you can initialize and uptade the submodules separately
 
 ```bash 
 git submodule init
-git submodule update
+git submodule update```
 
 Currently the build process covers only the dirty_tests
 
-2. **CD into dirty_tests
+2. **CD into dirty_tests**
 
     ```bash
-    cd ring_buffer_benchmarks/dirty_tests
+    cd ring_buffer_benchmarks/dirty_tests```
 
 3. **Get the ring_buffer header**
 
@@ -33,8 +33,9 @@ Currently the build process covers only the dirty_tests
     You can find the header file in https://github.com/Luhtaje/dynamic
 
     copy the ring_buffer.hpp to
+
     ```bash
-    ring_buffer_benchmarks/dirty_tests/include/
+    ring_buffer_benchmarks/dirty_tests/include/```
 
 
 4. **Build the project**
@@ -43,7 +44,7 @@ Currently the build process covers only the dirty_tests
     mkdir build
     cd build
     cmake ..
-    (make)
+    (make)```
 
 Build outputs to /tests
 
@@ -51,5 +52,5 @@ Build outputs to /tests
 
     ```bash
     cd tests
-    ./dirty_benchmark
+    ./dirty_benchmark```
 
