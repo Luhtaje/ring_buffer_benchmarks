@@ -252,6 +252,6 @@ BENCHMARK(BM_insert_large_begin_vector)->Range(1, 1 << 6);
 BENCHMARK(BM_insert_large_end_buffer)->Range(1, 1 << 6);
 BENCHMARK(BM_insert_large_end_vector)->Range(1, 1 << 6);
 
-BENCHMARK(BM_insert_shuffled_begin_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_insert_shuffled_end_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_insert_shuffled_middle_buffer)->Range(1, 1 << 6);
+BENCHMARK(BM_insert_shuffled_begin_buffer)->Range(1, 1 << 4);
+BENCHMARK(BM_insert_shuffled_end_buffer)->Range(1, 1 << 4);
+BENCHMARK(BM_insert_shuffled_middle_buffer)->Range(1, 1 << 4);
