@@ -1,0 +1,43 @@
+-----------------------------------------------------------------------------
+Benchmark                                   Time             CPU   Iterations
+-----------------------------------------------------------------------------
+BM_Vector_InsertAtBegin/10000            6795 ns         6795 ns       178691
+BM_Vector_InsertAtBegin/16384            6637 ns         6637 ns       161396
+BM_Vector_InsertAtBegin/32768            5514 ns         5514 ns       100000
+BM_Vector_InsertAtBegin/65536            7958 ns         7958 ns       100000
+BM_Vector_InsertAtBegin/100000          10447 ns        10447 ns        98718
+BM_Deque_InsertAtBegin/10000             20.6 ns         20.6 ns     33602812
+BM_Deque_InsertAtBegin/16384             20.3 ns         20.3 ns     34089454
+BM_Deque_InsertAtBegin/32768             20.3 ns         20.3 ns     34060012
+BM_Deque_InsertAtBegin/65536             20.3 ns         20.3 ns     34177785
+BM_Deque_InsertAtBegin/100000            20.3 ns         20.3 ns     34222415
+BM_List_InsertAtBegin/10000              46.2 ns         46.1 ns     14184621
+BM_List_InsertAtBegin/16384              44.5 ns         44.5 ns     16407368
+BM_List_InsertAtBegin/32768              42.6 ns         42.6 ns     16251805
+BM_List_InsertAtBegin/65536              50.2 ns         50.2 ns     10000000
+BM_List_InsertAtBegin/100000             47.0 ns         47.0 ns     16148470
+BM_RingBuffer_InsertAtBegin/10000        60.1 ns         60.1 ns     11537428
+BM_RingBuffer_InsertAtBegin/16384        63.8 ns         63.8 ns     11075073
+BM_RingBuffer_InsertAtBegin/32768        58.7 ns         58.7 ns     11910494
+BM_RingBuffer_InsertAtBegin/65536        64.4 ns         64.4 ns     12773420
+BM_RingBuffer_InsertAtBegin/100000       64.3 ns         64.3 ns     12959747
+BM_Vector_InsertAtEnd/10000              25.8 ns         25.8 ns     28215135
+BM_Vector_InsertAtEnd/16384              25.6 ns         25.6 ns     27754913
+BM_Vector_InsertAtEnd/32768              27.7 ns         27.7 ns     25369884
+BM_Vector_InsertAtEnd/65536              28.2 ns         28.2 ns     24997848
+BM_Vector_InsertAtEnd/100000             29.0 ns         29.0 ns     24672812
+BM_Deque_InsertAtEnd/10000               30.1 ns         30.1 ns     23298603
+BM_Deque_InsertAtEnd/16384               30.4 ns         30.4 ns     23307353
+BM_Deque_InsertAtEnd/32768               26.7 ns         26.7 ns     23792238
+BM_Deque_InsertAtEnd/65536               26.7 ns         26.7 ns     26296739
+BM_Deque_InsertAtEnd/100000              26.6 ns         26.6 ns     26265756
+BM_List_InsertAtEnd/10000                39.7 ns         39.7 ns     17081882
+BM_List_InsertAtEnd/16384                39.2 ns         39.2 ns     18661660
+BM_List_InsertAtEnd/32768                38.3 ns         38.3 ns     18764527
+BM_List_InsertAtEnd/65536                38.2 ns         38.2 ns     18217956
+BM_List_InsertAtEnd/100000               37.3 ns         37.3 ns     18694165
+BM_RingBuffer_InsertAtEnd/10000          53.0 ns         53.0 ns     12596430
+BM_RingBuffer_InsertAtEnd/16384          56.3 ns         56.3 ns     12057303
+BM_RingBuffer_InsertAtEnd/32768          51.7 ns         51.4 ns     13013208
+BM_RingBuffer_InsertAtEnd/65536          55.0 ns         55.0 ns     10000000
+BM_RingBuffer_InsertAtEnd/100000         55.4 ns         55.4 ns     10000000

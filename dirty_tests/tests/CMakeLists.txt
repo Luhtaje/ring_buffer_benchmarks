@@ -1,5 +1,5 @@
 add_executable(dirty_benchmark
-    benchmark_main.cpp
+    insertMiddleTest.cpp
 )
 
 set(CMAKE_BUILD_TYPE Debug)

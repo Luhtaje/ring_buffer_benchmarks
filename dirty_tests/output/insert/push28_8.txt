@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------
+Benchmark                               Time             CPU   Iterations
+-------------------------------------------------------------------------
+BM_Deque_PushFront/10000             8.31 ns         8.31 ns     83024955
+BM_Deque_PushFront/16384             8.15 ns         8.15 ns     85619789
+BM_Deque_PushFront/32768             8.36 ns         8.24 ns     84192903
+BM_Deque_PushFront/65536             8.18 ns         8.18 ns     85204796
+BM_Deque_PushFront/100000            8.15 ns         8.15 ns     85309570
+BM_List_PushFront/10000              34.6 ns         34.6 ns     19985405
+BM_List_PushFront/16384              33.2 ns         33.2 ns     21341001
+BM_List_PushFront/32768              33.2 ns         33.2 ns     21209030
+BM_List_PushFront/65536              32.9 ns         32.9 ns     17162159
+BM_List_PushFront/100000             33.5 ns         33.5 ns     17582652
+BM_RingBuffer_PushFront/10000        36.2 ns         36.2 ns     17225762
+BM_RingBuffer_PushFront/16384        32.9 ns         32.9 ns     21720998
+BM_RingBuffer_PushFront/32768        35.4 ns         35.4 ns     17611866
+BM_RingBuffer_PushFront/65536        40.7 ns         40.7 ns     19215423
+BM_RingBuffer_PushFront/100000       31.4 ns         31.4 ns     19049024
+BM_Vector_PushBack/10000             8.57 ns         8.57 ns    101628672
+BM_Vector_PushBack/16384             7.93 ns         7.93 ns     90443717
+BM_Vector_PushBack/32768             8.19 ns         8.19 ns     91089970
+BM_Vector_PushBack/65536             8.15 ns         8.15 ns     91859298
+BM_Vector_PushBack/100000            7.46 ns         7.46 ns     99785604
+BM_Deque_PushBack/10000              7.02 ns         6.85 ns    108155212
+BM_Deque_PushBack/16384              6.76 ns         6.76 ns    108298111
+BM_Deque_PushBack/32768              6.82 ns         6.82 ns    108682995
+BM_Deque_PushBack/65536              6.75 ns         6.75 ns    108823740
+BM_Deque_PushBack/100000             6.83 ns         6.83 ns    108620765
+BM_List_PushBack/10000               33.6 ns         33.6 ns     20224720
+BM_List_PushBack/16384               33.2 ns         33.2 ns     21410866
+BM_List_PushBack/32768               32.7 ns         32.7 ns     21381613
+BM_List_PushBack/65536               33.0 ns         33.0 ns     21365617
+BM_List_PushBack/100000              33.4 ns         33.4 ns     20938687
+BM_RingBuffer_PushBack/10000         35.9 ns         35.9 ns     17436236
+BM_RingBuffer_PushBack/16384         32.7 ns         32.7 ns     21753243
+BM_RingBuffer_PushBack/32768         34.6 ns         34.6 ns     17823819
+BM_RingBuffer_PushBack/65536         40.5 ns         40.5 ns     19320157
+BM_RingBuffer_PushBack/100000        31.2 ns         31.2 ns     19144734
