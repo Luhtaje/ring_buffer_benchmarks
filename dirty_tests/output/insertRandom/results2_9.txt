@@ -1,0 +1,18 @@
+----------------------------------------------------------------------------
+Benchmark                                  Time             CPU   Iterations
+----------------------------------------------------------------------------
+BM_Vector_InsertMiddle/10000             685 ns          704 ns       993517
+BM_Vector_InsertMiddle/16384             884 ns          906 ns       775431
+BM_Vector_InsertMiddle/32768            1387 ns         1411 ns       496619
+BM_Vector_InsertMiddle/65536            2404 ns         2434 ns       288073
+BM_Vector_InsertMiddle/100000           3584 ns         3621 ns       192302
+BM_Deque_InsertMiddle/10000             4667 ns         4685 ns       149943
+BM_Deque_InsertMiddle/16384             7149 ns         7170 ns       133574
+BM_Deque_InsertMiddle/32768            12874 ns        12898 ns        83304
+BM_Deque_InsertMiddle/65536            19880 ns        19920 ns        47602
+BM_Deque_InsertMiddle/100000           24795 ns        24841 ns        33269
+BM_RingBuffer_InsertMiddle/10000      140213 ns       140244 ns         6220
+BM_RingBuffer_InsertMiddle/16384      195295 ns       195326 ns         3894
+BM_RingBuffer_InsertMiddle/32768      359845 ns       359885 ns         1971
+BM_RingBuffer_InsertMiddle/65536      696221 ns       696358 ns         1016
+BM_RingBuffer_InsertMiddle/100000    1063536 ns      1063718 ns          661

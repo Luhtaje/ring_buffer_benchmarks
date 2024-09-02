@@ -2,105 +2,55 @@
 
 #include "ring_buffer.hpp"
 #include <vector>
+#include <deque>
+#include <list>
 
-ring_buffer<size_t> find_buffer(50000, 1);
-std::vector<size_t> find_vec(50000, 1);
-
-ring_buffer<size_t> find_if_buffer(50000, 1);
-std::vector<size_t> find_if_vec(50000, 1);
-
-ring_buffer<size_t> find_if_not_buffer(500000, 1);
-std::vector<size_t> find_if_not_vec(500000, 1);
-
-bool pred(int n)
-{
-    return n > 1;
-}
-
-static void BM_find_buffer(benchmark::State& state)
-{
-    find_buffer.pop_front();
-    find_buffer.insert(find_buffer.begin() + 25000, 2);
-    for(auto _ : state)
-    {
-        for(auto i = 1001; i < state.range(0); i++)
-        {
-            std::find(find_buffer.begin(), find_buffer.end(), (2));
-        }
-    }
-}
-
-static void BM_find_vector(benchmark::State& state)
-{
-    find_vec.pop_back();
-    find_vec.insert(find_vec.begin() + 25000, 2);
-
-    for(auto _ : state)
-    {
-        for(auto i = 1001; i < state.range(0); i++)
-        {
-            std::find(find_vec.begin(), find_vec.end(), 2);
-        }
-    }
-}
-
-static void BM_find_if_buffer(benchmark::State& state)
-{
-    find_if_buffer.pop_front();
-    find_if_buffer.insert(find_if_buffer.begin() + 25000, 2);
-    for(auto _ : state)
-    {
-        for(auto i = 1001; i < state.range(0); i++)
-        {
-            std::find_if(find_if_buffer.begin(), find_if_buffer.end(), pred);
-        }
-    }
-}
-
-static void BM_find_if_vector(benchmark::State& state)
-{
-    find_if_vec.pop_back();
-    find_if_vec.insert(find_if_vec.begin() + 25000, 2);
+void BM_findlist(benchmark::State& state) {
+    const int size = static_cast<int>(state.range(0));
     
-    for(auto _ : state)
-    {
-        for(auto i = 1001; i < state.range(0); i++)
-        {
-            std::find_if(find_if_vec.begin(), find_if_vec.end(), pred);
-        }
-    }
-}
-
-static void BM_find_if_not_buffer(benchmark::State& state)
-{
-    find_if_not_buffer.pop_front();
-    find_if_not_buffer.insert(find_if_not_buffer.begin() + 25000, 2);
-    for(auto _ : state)
-    {
-        for(auto i = 1001; i < state.range(0); i++)
-        {
-            std::find_if_not(find_if_not_buffer.begin(), find_if_not_buffer.end(), pred);
-        }
-    }
-}
-
-static void BM_find_if_not_vector(benchmark::State& state)
-{
-    find_if_not_vec.pop_back();
-    find_if_not_vec.insert(find_if_not_vec.begin() + 25000, 2);
+    std::list<long long> container(size);
     
-    for(auto _ : state)
-    {
-        for(auto i = 1001; i < state.range(0); i++)
-        {
-            std::find_if_not(find_if_not_vec.begin(), find_if_vec.end(), pred);
-        }
+    auto it = container.begin();
+    std::advance(it, container.size() / 2);
+    container.insert(it, static_cast<long long>(2));
+
+    for (auto _ : state) {
+        std::find(container.begin(), container.end(), static_cast<long long> (2));
     }
 }
 
-BENCHMARK(BM_find_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_find_vector)->Range(1, 1 << 6);
-BENCHMARK(BM_find_if_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_find_if_vector)->Range(1, 1 << 6);
-BENCHMARK(BM_find_if_not_buffer)->Range(1, 1 << 6);
-BENCHMARK(BM_find_if_not_vector)->Range(1, 1 << 6);
+template <typename Container>
+void BM_find(benchmark::State& state) {
+    const int size = static_cast<int>(state.range(0));
+    
+    Container container(size);
+    container.insert(container.begin() + container.size() / 2, static_cast<long long>(2));
+
+    for (auto _ : state) {
+        std::find(container.begin(), container.end(), static_cast<long long> (2));
+    }
+}
+
+template <typename Container>
+void RegisterBenchmark(const std::string& name) {
+
+    benchmark::RegisterBenchmark(name.c_str(), BM_find<Container>)
+        ->RangeMultiplier(2)
+        ->Range(10000, 100000)
+        ->Unit(benchmark::kNanosecond);
+}
+
+int main(int argc, char** argv)
+{
+    RegisterBenchmark<std::vector<long long>>("BM_Vector_find");
+    RegisterBenchmark<std::deque<long long>>("BM_Deque_find");
+    RegisterBenchmark<ring_buffer<long long>>("BM_RingBuffer_find");
+
+    benchmark::RegisterBenchmark("BM_List_InsertAtBegin",BM_findlist)
+        ->RangeMultiplier(2)
+        ->Range(10000, 100000)
+        ->Unit(benchmark::kNanosecond);
+
+    benchmark::Initialize(&argc, argv);
+    benchmark::RunSpecifiedBenchmarks();
+}

@@ -1,5 +1,5 @@
 #include "ring_buffer.hpp"
-#include <vector>
+
 #include <benchmark/benchmark.h>
 #include <vector>
 #include <deque>

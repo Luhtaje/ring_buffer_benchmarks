@@ -1,8 +1,8 @@
 add_executable(dirty_benchmark
-    insertMiddleTest.cpp
+    popTest.cpp
 )
 
-set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_BUILD_TYPE Release)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 target_include_directories(dirty_benchmark

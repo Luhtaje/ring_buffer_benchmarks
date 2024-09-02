@@ -1,0 +1,23 @@
+---------------------------------------------------------------------------
+Benchmark                                 Time             CPU   Iterations
+---------------------------------------------------------------------------
+BM_Vector_Construction/10000           5664 ns         5664 ns       124119
+BM_Vector_Construction/16384           9229 ns         9229 ns        76238
+BM_Vector_Construction/32768          18327 ns        18327 ns        38158
+BM_Vector_Construction/65536          36901 ns        36901 ns        19144
+BM_Vector_Construction/100000         56107 ns        56106 ns        12424
+BM_Deque_Construction/10000           11825 ns        11825 ns        60302
+BM_Deque_Construction/16384           18420 ns        18420 ns        38046
+BM_Deque_Construction/32768           37467 ns        37467 ns        19042
+BM_Deque_Construction/65536           74069 ns        74069 ns         9475
+BM_Deque_Construction/100000         114069 ns       114068 ns         6239
+BM_List_Construction/10000           486118 ns       486120 ns         1373
+BM_List_Construction/16384           803351 ns       803345 ns          869
+BM_List_Construction/32768          1628487 ns      1628479 ns          443
+BM_List_Construction/65536          3242103 ns      3242113 ns          217
+BM_List_Construction/100000         4971881 ns      4971899 ns          143
+BM_RingBuffer_IndexAccess/10000       95276 ns        95277 ns         7387
+BM_RingBuffer_IndexAccess/16384      156411 ns       156412 ns         4501
+BM_RingBuffer_IndexAccess/32768      313496 ns       313494 ns         2254
+BM_RingBuffer_IndexAccess/65536      624667 ns       624669 ns         1131
+BM_RingBuffer_IndexAccess/100000     957889 ns       957885 ns          733

@@ -1,0 +1,23 @@
+---------------------------------------------------------------------------
+Benchmark                                 Time             CPU   Iterations
+---------------------------------------------------------------------------
+BM_Vector_destruction/10000             360 ns          343 ns      2039101
+BM_Vector_destruction/16384             361 ns          344 ns      2016455
+BM_Vector_destruction/32768             368 ns          346 ns      2020481
+BM_Vector_destruction/65536             418 ns          378 ns      1841954
+BM_Vector_destruction/100000            558 ns          451 ns      1543051
+BM_Deque_destruction/10000             2099 ns         2084 ns       335820
+BM_Deque_destruction/16384             3276 ns         3270 ns       214181
+BM_Deque_destruction/32768             6234 ns         6233 ns       112262
+BM_Deque_destruction/65536            12249 ns        12235 ns        57320
+BM_Deque_destruction/100000           18741 ns        18661 ns        37566
+BM_List_destruction/10000            123305 ns       123296 ns         5681
+BM_List_destruction/16384            201202 ns       201187 ns         3466
+BM_List_destruction/32768            401512 ns       401504 ns         1742
+BM_List_destruction/65536            801164 ns       801147 ns          874
+BM_List_destruction/100000          1218616 ns      1218612 ns          574
+BM_RingBuffer_destruction/10000       74284 ns        74271 ns         9437
+BM_RingBuffer_destruction/16384      121546 ns       121532 ns         5733
+BM_RingBuffer_destruction/32768      243631 ns       243611 ns         2876
+BM_RingBuffer_destruction/65536      487809 ns       487784 ns         1438
+BM_RingBuffer_destruction/100000     745491 ns       745399 ns          936

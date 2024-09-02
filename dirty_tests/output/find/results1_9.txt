@@ -1,0 +1,23 @@
+-----------------------------------------------------------------------
+Benchmark                             Time             CPU   Iterations
+-----------------------------------------------------------------------
+BM_Vector_find/10000              15396 ns        15397 ns        45302
+BM_Vector_find/16384              25290 ns        25290 ns        27725
+BM_Vector_find/32768              50581 ns        50581 ns        13994
+BM_Vector_find/65536             102727 ns       102726 ns         6943
+BM_Vector_find/100000            154917 ns       154917 ns         4573
+BM_Deque_find/10000               21252 ns        21252 ns        31871
+BM_Deque_find/16384               34251 ns        34250 ns        20249
+BM_Deque_find/32768               68408 ns        68408 ns        10273
+BM_Deque_find/65536              137276 ns       137276 ns         5125
+BM_Deque_find/100000             208368 ns       208367 ns         3354
+BM_RingBuffer_find/10000          24047 ns        24046 ns        28828
+BM_RingBuffer_find/16384          38001 ns        38001 ns        18657
+BM_RingBuffer_find/32768          79436 ns        79436 ns         8817
+BM_RingBuffer_find/65536         158442 ns       158443 ns         4426
+BM_RingBuffer_find/100000        241581 ns       241579 ns         2928
+BM_List_InsertAtBegin/10000       34627 ns        34626 ns        20263
+BM_List_InsertAtBegin/16384       56140 ns        56140 ns        12435
+BM_List_InsertAtBegin/32768      113330 ns       113330 ns         6243
+BM_List_InsertAtBegin/65536      225449 ns       225450 ns         3143
+BM_List_InsertAtBegin/100000     341940 ns       341938 ns         2045

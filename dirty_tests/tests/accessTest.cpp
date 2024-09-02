@@ -2,31 +2,43 @@
 
 #include "ring_buffer.hpp"
 #include <vector>
+#include <deque>
+#include <list>
 
-ring_buffer<size_t> access_buffer(1000, 1);
-std::vector<size_t> access_vec(1000, 1);
+template <typename Container>
+void BM_IndexAccess(benchmark::State& state) {
+    const int size = static_cast<int>(state.range(0));
+    
+    Container container(size);
 
-static void BM_access_buffer(benchmark::State& state) 
-{
-    for(auto _ : state)
-    {
-        for(auto i = 0; i < state.range(0); i++)
-        {
-            access_buffer[i];
-        }
+    srand(time(0));
+    auto pos = rand() % (size);
+
+    for (auto _ : state) {
+        container.operator[](pos);
+        
+        state.PauseTiming();
+        pos = rand() % (size);
+        state.ResumeTiming();
     }
 }
 
-static void BM_access_vector(benchmark::State& state) 
-{
-    for(auto _ : state)
-    {
-        for(auto i = 0; i < state.range(0); i++)
-        {
-            access_vec[i];
-        }
-    }
+template <typename Container>
+void RegisterBenchmark(const std::string& name) {
+
+    benchmark::RegisterBenchmark(name.c_str(), BM_IndexAccess<Container>)
+        ->RangeMultiplier(2)
+        ->Range(10000, 100000)
+        ->Unit(benchmark::kNanosecond);
 }
 
-BENCHMARK(BM_access_buffer)->Range(1, 1000);
-BENCHMARK(BM_access_vector)->Range(1, 1000);
+int main(int argc, char** argv)
+{
+    RegisterBenchmark<std::vector<long long>>("BM_Vector_IndexAccess");
+    RegisterBenchmark<std::deque<long long>>("BM_Deque_IndexAccess");
+    //RegisterBenchmark<std::list<long long>>("BM_List_InsertAtBegin");
+    RegisterBenchmark<ring_buffer<long long>>("BM_RingBuffer_IndexAccess");
+
+    benchmark::Initialize(&argc, argv);
+    benchmark::RunSpecifiedBenchmarks();
+}

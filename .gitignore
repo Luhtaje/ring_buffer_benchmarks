@@ -1,9 +1,9 @@
-**/CMakeFiles
 *.json
 **/include/ring_buffer.hpp
 
+**/CMakeFiles
 **/CMakeCache.txt
-**/Makefile/
+**/Makefile
 **/*.cmake
 
 **/*.exe
@@ -12,5 +12,6 @@
 
 **/tests/dirty_benchmark
 
-external/benchmark/
-external/googletest/
+dirty_tests/external/benchmark/
+dirty_tests/external/googletest/
+dirty_tests/lib/
