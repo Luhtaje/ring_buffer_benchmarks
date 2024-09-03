@@ -1,0 +1,1697 @@
+desc: --massif-out-file=/output/massif.out.memory.deque
+cmd: ./memory_deque
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2270380
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2323282
+mem_heap_B=269520
+mem_heap_extra_B=4488
+mem_stacks_B=0
+heap_tree=detailed
+n5: 269520 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 101888 0x1095EC: allocate (new_allocator.h:114)
+  n1: 101888 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 101888 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 101888 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 101888 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 101888 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 101888 0x1095EC: deque (stl_deque.h:915)
+        n1: 101888 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 101888 0x1091EB: main (memory_deque.cpp:6)
+ n1: 80896 0x109229: allocate (new_allocator.h:114)
+  n1: 80896 0x109229: allocate (alloc_traits.h:443)
+   n1: 80896 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 80896 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 80896 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 80896 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 80896 0x109229: deque (stl_deque.h:949)
+        n0: 80896 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 12736 0x1095CC: allocate (new_allocator.h:114)
+  n1: 12736 0x1095CC: allocate (alloc_traits.h:443)
+   n1: 12736 0x1095CC: _M_allocate_map (stl_deque.h:634)
+    n1: 12736 0x1095CC: _M_initialize_map (stl_deque.h:707)
+     n1: 12736 0x1095CC: _Deque_base (stl_deque.h:510)
+      n1: 12736 0x1095CC: deque (stl_deque.h:915)
+       n1: 12736 0x1095CC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+        n0: 12736 0x1091EB: main (memory_deque.cpp:6)
+ n0: 1296 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=2404182
+mem_heap_B=472120
+mem_heap_extra_B=7648
+mem_stacks_B=0
+heap_tree=detailed
+n5: 472120 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 283136 0x109229: allocate (new_allocator.h:114)
+  n1: 283136 0x109229: allocate (alloc_traits.h:443)
+   n1: 283136 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 283136 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 283136 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 283136 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 283136 0x109229: deque (stl_deque.h:949)
+        n0: 283136 0x109229: main (memory_deque.cpp:10)
+ n1: 99328 0x1095EC: allocate (new_allocator.h:114)
+  n1: 99328 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 99328 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 99328 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 99328 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 99328 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 99328 0x1095EC: deque (stl_deque.h:915)
+        n1: 99328 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 99328 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 12416 0x1095CC: allocate (new_allocator.h:114)
+  n1: 12416 0x1095CC: allocate (alloc_traits.h:443)
+   n1: 12416 0x1095CC: _M_allocate_map (stl_deque.h:634)
+    n1: 12416 0x1095CC: _M_initialize_map (stl_deque.h:707)
+     n1: 12416 0x1095CC: _Deque_base (stl_deque.h:510)
+      n1: 12416 0x1095CC: deque (stl_deque.h:915)
+       n1: 12416 0x1095CC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+        n0: 12416 0x1091EB: main (memory_deque.cpp:6)
+ n0: 4536 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=2468902
+mem_heap_B=634200
+mem_heap_extra_B=10176
+mem_stacks_B=0
+heap_tree=detailed
+n5: 634200 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 444928 0x109229: allocate (new_allocator.h:114)
+  n1: 444928 0x109229: allocate (alloc_traits.h:443)
+   n1: 444928 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 444928 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 444928 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 444928 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 444928 0x109229: deque (stl_deque.h:949)
+        n0: 444928 0x109229: main (memory_deque.cpp:10)
+ n1: 97280 0x1095EC: allocate (new_allocator.h:114)
+  n1: 97280 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 97280 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 97280 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 97280 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 97280 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 97280 0x1095EC: deque (stl_deque.h:915)
+        n1: 97280 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 97280 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 12160 0x1095CC: allocate (new_allocator.h:114)
+  n1: 12160 0x1095CC: allocate (alloc_traits.h:443)
+   n1: 12160 0x1095CC: _M_allocate_map (stl_deque.h:634)
+    n1: 12160 0x1095CC: _M_initialize_map (stl_deque.h:707)
+     n1: 12160 0x1095CC: _Deque_base (stl_deque.h:510)
+      n1: 12160 0x1095CC: deque (stl_deque.h:915)
+       n1: 12160 0x1095CC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+        n0: 12160 0x1091EB: main (memory_deque.cpp:6)
+ n1: 7128 0x109209: allocate (new_allocator.h:114)
+  n1: 7128 0x109209: allocate (alloc_traits.h:443)
+   n1: 7128 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 7128 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 7128 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 7128 0x109209: deque (stl_deque.h:949)
+       n0: 7128 0x109209: main (memory_deque.cpp:10)
+#-----------
+snapshot=5
+#-----------
+time=2535987
+mem_heap_B=826560
+mem_heap_extra_B=13176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2663062
+mem_heap_B=1120440
+mem_heap_extra_B=17760
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1120440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 930304 0x109229: allocate (new_allocator.h:114)
+  n1: 930304 0x109229: allocate (alloc_traits.h:443)
+   n1: 930304 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 930304 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 930304 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 930304 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 930304 0x109229: deque (stl_deque.h:949)
+        n0: 930304 0x109229: main (memory_deque.cpp:10)
+ n1: 91136 0x1095EC: allocate (new_allocator.h:114)
+  n1: 91136 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 91136 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 91136 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 91136 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 91136 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 91136 0x1095EC: deque (stl_deque.h:915)
+        n1: 91136 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 91136 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 14904 0x109209: allocate (new_allocator.h:114)
+  n1: 14904 0x109209: allocate (alloc_traits.h:443)
+   n1: 14904 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 14904 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 14904 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 14904 0x109209: deque (stl_deque.h:949)
+       n0: 14904 0x109209: main (memory_deque.cpp:10)
+ n1: 11392 0x1095CC: allocate (new_allocator.h:114)
+  n1: 11392 0x1095CC: allocate (alloc_traits.h:443)
+   n1: 11392 0x1095CC: _M_allocate_map (stl_deque.h:634)
+    n1: 11392 0x1095CC: _M_initialize_map (stl_deque.h:707)
+     n1: 11392 0x1095CC: _Deque_base (stl_deque.h:510)
+      n1: 11392 0x1095CC: deque (stl_deque.h:915)
+       n1: 11392 0x1095CC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+        n0: 11392 0x1091EB: main (memory_deque.cpp:6)
+#-----------
+snapshot=7
+#-----------
+time=2776322
+mem_heap_B=1404080
+mem_heap_extra_B=22184
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1404080 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1213440 0x109229: allocate (new_allocator.h:114)
+  n1: 1213440 0x109229: allocate (alloc_traits.h:443)
+   n1: 1213440 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 1213440 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 1213440 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 1213440 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 1213440 0x109229: deque (stl_deque.h:949)
+        n0: 1213440 0x109229: main (memory_deque.cpp:10)
+ n1: 87552 0x1095EC: allocate (new_allocator.h:114)
+  n1: 87552 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 87552 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 87552 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 87552 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 87552 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 87552 0x1095EC: deque (stl_deque.h:915)
+        n1: 87552 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 87552 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 19440 0x109209: allocate (new_allocator.h:114)
+  n1: 19440 0x109209: allocate (alloc_traits.h:443)
+   n1: 19440 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 19440 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 19440 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 19440 0x109209: deque (stl_deque.h:949)
+       n0: 19440 0x109209: main (memory_deque.cpp:10)
+ n0: 10944 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=2905762
+mem_heap_B=1728240
+mem_heap_extra_B=27240
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1728240 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1537024 0x109229: allocate (new_allocator.h:114)
+  n1: 1537024 0x109229: allocate (alloc_traits.h:443)
+   n1: 1537024 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 1537024 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 1537024 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 1537024 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 1537024 0x109229: deque (stl_deque.h:949)
+        n0: 1537024 0x109229: main (memory_deque.cpp:10)
+ n1: 83456 0x1095EC: allocate (new_allocator.h:114)
+  n1: 83456 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 83456 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 83456 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 83456 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 83456 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 83456 0x1095EC: deque (stl_deque.h:915)
+        n1: 83456 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 83456 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 24624 0x109209: allocate (new_allocator.h:114)
+  n1: 24624 0x109209: allocate (alloc_traits.h:443)
+   n1: 24624 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 24624 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 24624 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 24624 0x109209: deque (stl_deque.h:949)
+       n0: 24624 0x109209: main (memory_deque.cpp:10)
+ n0: 10432 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=2970482
+mem_heap_B=1890320
+mem_heap_extra_B=29768
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1890320 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1698816 0x109229: allocate (new_allocator.h:114)
+  n1: 1698816 0x109229: allocate (alloc_traits.h:443)
+   n1: 1698816 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 1698816 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 1698816 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 1698816 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 1698816 0x109229: deque (stl_deque.h:949)
+        n0: 1698816 0x109229: main (memory_deque.cpp:10)
+ n1: 81408 0x1095EC: allocate (new_allocator.h:114)
+  n1: 81408 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 81408 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 81408 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 81408 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 81408 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 81408 0x1095EC: deque (stl_deque.h:915)
+        n1: 81408 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 81408 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 27216 0x109209: allocate (new_allocator.h:114)
+  n1: 27216 0x109209: allocate (alloc_traits.h:443)
+   n1: 27216 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 27216 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 27216 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 27216 0x109209: deque (stl_deque.h:949)
+       n0: 27216 0x109209: main (memory_deque.cpp:10)
+ n0: 10176 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=3035202
+mem_heap_B=2052400
+mem_heap_extra_B=32296
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2052400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1860608 0x109229: allocate (new_allocator.h:114)
+  n1: 1860608 0x109229: allocate (alloc_traits.h:443)
+   n1: 1860608 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 1860608 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 1860608 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 1860608 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 1860608 0x109229: deque (stl_deque.h:949)
+        n0: 1860608 0x109229: main (memory_deque.cpp:10)
+ n1: 79360 0x1095EC: allocate (new_allocator.h:114)
+  n1: 79360 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 79360 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 79360 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 79360 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 79360 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 79360 0x1095EC: deque (stl_deque.h:915)
+        n1: 79360 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 79360 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 29808 0x109209: allocate (new_allocator.h:114)
+  n1: 29808 0x109209: allocate (alloc_traits.h:443)
+   n1: 29808 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 29808 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 29808 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 29808 0x109209: deque (stl_deque.h:949)
+       n0: 29808 0x109209: main (memory_deque.cpp:10)
+ n0: 9920 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=3099922
+mem_heap_B=2214480
+mem_heap_extra_B=34824
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2214480 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2022400 0x109229: allocate (new_allocator.h:114)
+  n1: 2022400 0x109229: allocate (alloc_traits.h:443)
+   n1: 2022400 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 2022400 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 2022400 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 2022400 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 2022400 0x109229: deque (stl_deque.h:949)
+        n0: 2022400 0x109229: main (memory_deque.cpp:10)
+ n1: 77312 0x1095EC: allocate (new_allocator.h:114)
+  n1: 77312 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 77312 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 77312 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 77312 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 77312 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 77312 0x1095EC: deque (stl_deque.h:915)
+        n1: 77312 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 77312 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 32400 0x109209: allocate (new_allocator.h:114)
+  n1: 32400 0x109209: allocate (alloc_traits.h:443)
+   n1: 32400 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 32400 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 32400 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 32400 0x109209: deque (stl_deque.h:949)
+       n0: 32400 0x109209: main (memory_deque.cpp:10)
+ n0: 9664 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=3164642
+mem_heap_B=2376560
+mem_heap_extra_B=37352
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2376560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2184192 0x109229: allocate (new_allocator.h:114)
+  n1: 2184192 0x109229: allocate (alloc_traits.h:443)
+   n1: 2184192 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 2184192 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 2184192 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 2184192 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 2184192 0x109229: deque (stl_deque.h:949)
+        n0: 2184192 0x109229: main (memory_deque.cpp:10)
+ n1: 75264 0x1095EC: allocate (new_allocator.h:114)
+  n1: 75264 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 75264 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 75264 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 75264 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 75264 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 75264 0x1095EC: deque (stl_deque.h:915)
+        n1: 75264 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 75264 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 34992 0x109209: allocate (new_allocator.h:114)
+  n1: 34992 0x109209: allocate (alloc_traits.h:443)
+   n1: 34992 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 34992 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 34992 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 34992 0x109209: deque (stl_deque.h:949)
+       n0: 34992 0x109209: main (memory_deque.cpp:10)
+ n0: 9408 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=3229362
+mem_heap_B=2538640
+mem_heap_extra_B=39880
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2538640 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2345984 0x109229: allocate (new_allocator.h:114)
+  n1: 2345984 0x109229: allocate (alloc_traits.h:443)
+   n1: 2345984 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 2345984 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 2345984 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 2345984 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 2345984 0x109229: deque (stl_deque.h:949)
+        n0: 2345984 0x109229: main (memory_deque.cpp:10)
+ n1: 73216 0x1095EC: allocate (new_allocator.h:114)
+  n1: 73216 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 73216 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 73216 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 73216 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 73216 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 73216 0x1095EC: deque (stl_deque.h:915)
+        n1: 73216 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 73216 0x1091EB: main (memory_deque.cpp:6)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 37584 0x109209: allocate (new_allocator.h:114)
+  n1: 37584 0x109209: allocate (alloc_traits.h:443)
+   n1: 37584 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 37584 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 37584 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 37584 0x109209: deque (stl_deque.h:949)
+       n0: 37584 0x109209: main (memory_deque.cpp:10)
+ n0: 9152 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=3294082
+mem_heap_B=2700720
+mem_heap_extra_B=42408
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2700720 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2507776 0x109229: allocate (new_allocator.h:114)
+  n1: 2507776 0x109229: allocate (alloc_traits.h:443)
+   n1: 2507776 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 2507776 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 2507776 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 2507776 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 2507776 0x109229: deque (stl_deque.h:949)
+        n0: 2507776 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 71168 0x1095EC: allocate (new_allocator.h:114)
+  n1: 71168 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 71168 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 71168 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 71168 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 71168 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 71168 0x1095EC: deque (stl_deque.h:915)
+        n1: 71168 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 71168 0x1091EB: main (memory_deque.cpp:6)
+ n1: 40176 0x109209: allocate (new_allocator.h:114)
+  n1: 40176 0x109209: allocate (alloc_traits.h:443)
+   n1: 40176 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 40176 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 40176 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 40176 0x109209: deque (stl_deque.h:949)
+       n0: 40176 0x109209: main (memory_deque.cpp:10)
+ n0: 8896 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=3358802
+mem_heap_B=2862800
+mem_heap_extra_B=44936
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2862800 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2669568 0x109229: allocate (new_allocator.h:114)
+  n1: 2669568 0x109229: allocate (alloc_traits.h:443)
+   n1: 2669568 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 2669568 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 2669568 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 2669568 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 2669568 0x109229: deque (stl_deque.h:949)
+        n0: 2669568 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 69120 0x1095EC: allocate (new_allocator.h:114)
+  n1: 69120 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 69120 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 69120 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 69120 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 69120 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 69120 0x1095EC: deque (stl_deque.h:915)
+        n1: 69120 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 69120 0x1091EB: main (memory_deque.cpp:6)
+ n1: 42768 0x109209: allocate (new_allocator.h:114)
+  n1: 42768 0x109209: allocate (alloc_traits.h:443)
+   n1: 42768 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 42768 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 42768 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 42768 0x109209: deque (stl_deque.h:949)
+       n0: 42768 0x109209: main (memory_deque.cpp:10)
+ n0: 8640 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=3423522
+mem_heap_B=3024880
+mem_heap_extra_B=47464
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3024880 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2831360 0x109229: allocate (new_allocator.h:114)
+  n1: 2831360 0x109229: allocate (alloc_traits.h:443)
+   n1: 2831360 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 2831360 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 2831360 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 2831360 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 2831360 0x109229: deque (stl_deque.h:949)
+        n0: 2831360 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 67072 0x1095EC: allocate (new_allocator.h:114)
+  n1: 67072 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 67072 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 67072 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 67072 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 67072 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 67072 0x1095EC: deque (stl_deque.h:915)
+        n1: 67072 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 67072 0x1091EB: main (memory_deque.cpp:6)
+ n1: 45360 0x109209: allocate (new_allocator.h:114)
+  n1: 45360 0x109209: allocate (alloc_traits.h:443)
+   n1: 45360 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 45360 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 45360 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 45360 0x109209: deque (stl_deque.h:949)
+       n0: 45360 0x109209: main (memory_deque.cpp:10)
+ n0: 8384 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=3488242
+mem_heap_B=3186960
+mem_heap_extra_B=49992
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3186960 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2993152 0x109229: allocate (new_allocator.h:114)
+  n1: 2993152 0x109229: allocate (alloc_traits.h:443)
+   n1: 2993152 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 2993152 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 2993152 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 2993152 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 2993152 0x109229: deque (stl_deque.h:949)
+        n0: 2993152 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 65024 0x1095EC: allocate (new_allocator.h:114)
+  n1: 65024 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 65024 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 65024 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 65024 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 65024 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 65024 0x1095EC: deque (stl_deque.h:915)
+        n1: 65024 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 65024 0x1091EB: main (memory_deque.cpp:6)
+ n1: 47952 0x109209: allocate (new_allocator.h:114)
+  n1: 47952 0x109209: allocate (alloc_traits.h:443)
+   n1: 47952 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 47952 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 47952 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 47952 0x109209: deque (stl_deque.h:949)
+       n0: 47952 0x109209: main (memory_deque.cpp:10)
+ n0: 8128 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=3552962
+mem_heap_B=3349040
+mem_heap_extra_B=52520
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3349040 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3154944 0x109229: allocate (new_allocator.h:114)
+  n1: 3154944 0x109229: allocate (alloc_traits.h:443)
+   n1: 3154944 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 3154944 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 3154944 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 3154944 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 3154944 0x109229: deque (stl_deque.h:949)
+        n0: 3154944 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 62976 0x1095EC: allocate (new_allocator.h:114)
+  n1: 62976 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 62976 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 62976 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 62976 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 62976 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 62976 0x1095EC: deque (stl_deque.h:915)
+        n1: 62976 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 62976 0x1091EB: main (memory_deque.cpp:6)
+ n1: 50544 0x109209: allocate (new_allocator.h:114)
+  n1: 50544 0x109209: allocate (alloc_traits.h:443)
+   n1: 50544 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 50544 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 50544 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 50544 0x109209: deque (stl_deque.h:949)
+       n0: 50544 0x109209: main (memory_deque.cpp:10)
+ n0: 7872 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=3617682
+mem_heap_B=3511120
+mem_heap_extra_B=55048
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3511120 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3316736 0x109229: allocate (new_allocator.h:114)
+  n1: 3316736 0x109229: allocate (alloc_traits.h:443)
+   n1: 3316736 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 3316736 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 3316736 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 3316736 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 3316736 0x109229: deque (stl_deque.h:949)
+        n0: 3316736 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 60928 0x1095EC: allocate (new_allocator.h:114)
+  n1: 60928 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 60928 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 60928 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 60928 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 60928 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 60928 0x1095EC: deque (stl_deque.h:915)
+        n1: 60928 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 60928 0x1091EB: main (memory_deque.cpp:6)
+ n1: 53136 0x109209: allocate (new_allocator.h:114)
+  n1: 53136 0x109209: allocate (alloc_traits.h:443)
+   n1: 53136 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 53136 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 53136 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 53136 0x109209: deque (stl_deque.h:949)
+       n0: 53136 0x109209: main (memory_deque.cpp:10)
+ n0: 7616 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=3682402
+mem_heap_B=3673200
+mem_heap_extra_B=57576
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3673200 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3478528 0x109229: allocate (new_allocator.h:114)
+  n1: 3478528 0x109229: allocate (alloc_traits.h:443)
+   n1: 3478528 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 3478528 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 3478528 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 3478528 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 3478528 0x109229: deque (stl_deque.h:949)
+        n0: 3478528 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 58880 0x1095EC: allocate (new_allocator.h:114)
+  n1: 58880 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 58880 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 58880 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 58880 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 58880 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 58880 0x1095EC: deque (stl_deque.h:915)
+        n1: 58880 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 58880 0x1091EB: main (memory_deque.cpp:6)
+ n1: 55728 0x109209: allocate (new_allocator.h:114)
+  n1: 55728 0x109209: allocate (alloc_traits.h:443)
+   n1: 55728 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 55728 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 55728 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 55728 0x109209: deque (stl_deque.h:949)
+       n0: 55728 0x109209: main (memory_deque.cpp:10)
+ n0: 7360 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=3747122
+mem_heap_B=3835280
+mem_heap_extra_B=60104
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3835280 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3640320 0x109229: allocate (new_allocator.h:114)
+  n1: 3640320 0x109229: allocate (alloc_traits.h:443)
+   n1: 3640320 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 3640320 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 3640320 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 3640320 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 3640320 0x109229: deque (stl_deque.h:949)
+        n0: 3640320 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 58320 0x109209: allocate (new_allocator.h:114)
+  n1: 58320 0x109209: allocate (alloc_traits.h:443)
+   n1: 58320 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 58320 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 58320 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 58320 0x109209: deque (stl_deque.h:949)
+       n0: 58320 0x109209: main (memory_deque.cpp:10)
+ n1: 56832 0x1095EC: allocate (new_allocator.h:114)
+  n1: 56832 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 56832 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 56832 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 56832 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 56832 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 56832 0x1095EC: deque (stl_deque.h:915)
+        n1: 56832 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 56832 0x1091EB: main (memory_deque.cpp:6)
+ n0: 7104 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=3811842
+mem_heap_B=3997360
+mem_heap_extra_B=62632
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3997360 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3802112 0x109229: allocate (new_allocator.h:114)
+  n1: 3802112 0x109229: allocate (alloc_traits.h:443)
+   n1: 3802112 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 3802112 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 3802112 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 3802112 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 3802112 0x109229: deque (stl_deque.h:949)
+        n0: 3802112 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 60912 0x109209: allocate (new_allocator.h:114)
+  n1: 60912 0x109209: allocate (alloc_traits.h:443)
+   n1: 60912 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 60912 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 60912 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 60912 0x109209: deque (stl_deque.h:949)
+       n0: 60912 0x109209: main (memory_deque.cpp:10)
+ n1: 54784 0x1095EC: allocate (new_allocator.h:114)
+  n1: 54784 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 54784 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 54784 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 54784 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 54784 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 54784 0x1095EC: deque (stl_deque.h:915)
+        n1: 54784 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 54784 0x1091EB: main (memory_deque.cpp:6)
+ n0: 6848 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=3876562
+mem_heap_B=4159440
+mem_heap_extra_B=65160
+mem_stacks_B=0
+heap_tree=detailed
+n5: 4159440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3963904 0x109229: allocate (new_allocator.h:114)
+  n1: 3963904 0x109229: allocate (alloc_traits.h:443)
+   n1: 3963904 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 3963904 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 3963904 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 3963904 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 3963904 0x109229: deque (stl_deque.h:949)
+        n0: 3963904 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 63504 0x109209: allocate (new_allocator.h:114)
+  n1: 63504 0x109209: allocate (alloc_traits.h:443)
+   n1: 63504 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 63504 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 63504 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 63504 0x109209: deque (stl_deque.h:949)
+       n0: 63504 0x109209: main (memory_deque.cpp:10)
+ n1: 52736 0x1095EC: allocate (new_allocator.h:114)
+  n1: 52736 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 52736 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 52736 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 52736 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 52736 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 52736 0x1095EC: deque (stl_deque.h:915)
+        n1: 52736 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 52736 0x1091EB: main (memory_deque.cpp:6)
+ n0: 6592 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=3941282
+mem_heap_B=4321520
+mem_heap_extra_B=67688
+mem_stacks_B=0
+heap_tree=detailed
+n5: 4321520 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4125696 0x109229: allocate (new_allocator.h:114)
+  n1: 4125696 0x109229: allocate (alloc_traits.h:443)
+   n1: 4125696 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 4125696 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 4125696 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 4125696 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 4125696 0x109229: deque (stl_deque.h:949)
+        n0: 4125696 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 66096 0x109209: allocate (new_allocator.h:114)
+  n1: 66096 0x109209: allocate (alloc_traits.h:443)
+   n1: 66096 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 66096 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 66096 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 66096 0x109209: deque (stl_deque.h:949)
+       n0: 66096 0x109209: main (memory_deque.cpp:10)
+ n1: 50688 0x1095EC: allocate (new_allocator.h:114)
+  n1: 50688 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 50688 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 50688 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 50688 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 50688 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 50688 0x1095EC: deque (stl_deque.h:915)
+        n1: 50688 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 50688 0x1091EB: main (memory_deque.cpp:6)
+ n0: 6336 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=4006002
+mem_heap_B=4483600
+mem_heap_extra_B=70216
+mem_stacks_B=0
+heap_tree=detailed
+n5: 4483600 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4287488 0x109229: allocate (new_allocator.h:114)
+  n1: 4287488 0x109229: allocate (alloc_traits.h:443)
+   n1: 4287488 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 4287488 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 4287488 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 4287488 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 4287488 0x109229: deque (stl_deque.h:949)
+        n0: 4287488 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 68688 0x109209: allocate (new_allocator.h:114)
+  n1: 68688 0x109209: allocate (alloc_traits.h:443)
+   n1: 68688 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 68688 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 68688 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 68688 0x109209: deque (stl_deque.h:949)
+       n0: 68688 0x109209: main (memory_deque.cpp:10)
+ n1: 48640 0x1095EC: allocate (new_allocator.h:114)
+  n1: 48640 0x1095EC: allocate (alloc_traits.h:443)
+   n1: 48640 0x1095EC: _M_allocate_node (stl_deque.h:620)
+    n1: 48640 0x1095EC: _M_create_nodes (stl_deque.h:745)
+     n1: 48640 0x1095EC: _M_initialize_map (stl_deque.h:719)
+      n1: 48640 0x1095EC: _Deque_base (stl_deque.h:510)
+       n1: 48640 0x1095EC: deque (stl_deque.h:915)
+        n1: 48640 0x1095EC: std::array<std::deque<int, std::allocator<int> >, 200ul>::array() (array:94)
+         n0: 48640 0x1091EB: main (memory_deque.cpp:6)
+ n0: 6080 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=4070722
+mem_heap_B=4645680
+mem_heap_extra_B=72744
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4645680 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4449280 0x109229: allocate (new_allocator.h:114)
+  n1: 4449280 0x109229: allocate (alloc_traits.h:443)
+   n1: 4449280 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 4449280 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 4449280 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 4449280 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 4449280 0x109229: deque (stl_deque.h:949)
+        n0: 4449280 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 71280 0x109209: allocate (new_allocator.h:114)
+  n1: 71280 0x109209: allocate (alloc_traits.h:443)
+   n1: 71280 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 71280 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 71280 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 71280 0x109209: deque (stl_deque.h:949)
+       n0: 71280 0x109209: main (memory_deque.cpp:10)
+ n0: 52416 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=4135442
+mem_heap_B=4807760
+mem_heap_extra_B=75272
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4807760 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4611072 0x109229: allocate (new_allocator.h:114)
+  n1: 4611072 0x109229: allocate (alloc_traits.h:443)
+   n1: 4611072 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 4611072 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 4611072 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 4611072 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 4611072 0x109229: deque (stl_deque.h:949)
+        n0: 4611072 0x109229: main (memory_deque.cpp:10)
+ n1: 73872 0x109209: allocate (new_allocator.h:114)
+  n1: 73872 0x109209: allocate (alloc_traits.h:443)
+   n1: 73872 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 73872 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 73872 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 73872 0x109209: deque (stl_deque.h:949)
+       n0: 73872 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 50112 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=4200162
+mem_heap_B=4969840
+mem_heap_extra_B=77800
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4969840 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4772864 0x109229: allocate (new_allocator.h:114)
+  n1: 4772864 0x109229: allocate (alloc_traits.h:443)
+   n1: 4772864 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 4772864 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 4772864 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 4772864 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 4772864 0x109229: deque (stl_deque.h:949)
+        n0: 4772864 0x109229: main (memory_deque.cpp:10)
+ n1: 76464 0x109209: allocate (new_allocator.h:114)
+  n1: 76464 0x109209: allocate (alloc_traits.h:443)
+   n1: 76464 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 76464 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 76464 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 76464 0x109209: deque (stl_deque.h:949)
+       n0: 76464 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 47808 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=4264882
+mem_heap_B=5131920
+mem_heap_extra_B=80328
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5131920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4934656 0x109229: allocate (new_allocator.h:114)
+  n1: 4934656 0x109229: allocate (alloc_traits.h:443)
+   n1: 4934656 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 4934656 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 4934656 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 4934656 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 4934656 0x109229: deque (stl_deque.h:949)
+        n0: 4934656 0x109229: main (memory_deque.cpp:10)
+ n1: 79056 0x109209: allocate (new_allocator.h:114)
+  n1: 79056 0x109209: allocate (alloc_traits.h:443)
+   n1: 79056 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 79056 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 79056 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 79056 0x109209: deque (stl_deque.h:949)
+       n0: 79056 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 45504 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=4329602
+mem_heap_B=5294000
+mem_heap_extra_B=82856
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5294000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5096448 0x109229: allocate (new_allocator.h:114)
+  n1: 5096448 0x109229: allocate (alloc_traits.h:443)
+   n1: 5096448 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 5096448 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 5096448 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 5096448 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 5096448 0x109229: deque (stl_deque.h:949)
+        n0: 5096448 0x109229: main (memory_deque.cpp:10)
+ n1: 81648 0x109209: allocate (new_allocator.h:114)
+  n1: 81648 0x109209: allocate (alloc_traits.h:443)
+   n1: 81648 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 81648 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 81648 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 81648 0x109209: deque (stl_deque.h:949)
+       n0: 81648 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 43200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=4394322
+mem_heap_B=5456080
+mem_heap_extra_B=85384
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5456080 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5258240 0x109229: allocate (new_allocator.h:114)
+  n1: 5258240 0x109229: allocate (alloc_traits.h:443)
+   n1: 5258240 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 5258240 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 5258240 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 5258240 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 5258240 0x109229: deque (stl_deque.h:949)
+        n0: 5258240 0x109229: main (memory_deque.cpp:10)
+ n1: 84240 0x109209: allocate (new_allocator.h:114)
+  n1: 84240 0x109209: allocate (alloc_traits.h:443)
+   n1: 84240 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 84240 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 84240 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 84240 0x109209: deque (stl_deque.h:949)
+       n0: 84240 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 40896 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=4459042
+mem_heap_B=5618160
+mem_heap_extra_B=87912
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5618160 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5420032 0x109229: allocate (new_allocator.h:114)
+  n1: 5420032 0x109229: allocate (alloc_traits.h:443)
+   n1: 5420032 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 5420032 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 5420032 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 5420032 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 5420032 0x109229: deque (stl_deque.h:949)
+        n0: 5420032 0x109229: main (memory_deque.cpp:10)
+ n1: 86832 0x109209: allocate (new_allocator.h:114)
+  n1: 86832 0x109209: allocate (alloc_traits.h:443)
+   n1: 86832 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 86832 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 86832 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 86832 0x109209: deque (stl_deque.h:949)
+       n0: 86832 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 38592 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=4523762
+mem_heap_B=5780240
+mem_heap_extra_B=90440
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5780240 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5581824 0x109229: allocate (new_allocator.h:114)
+  n1: 5581824 0x109229: allocate (alloc_traits.h:443)
+   n1: 5581824 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 5581824 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 5581824 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 5581824 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 5581824 0x109229: deque (stl_deque.h:949)
+        n0: 5581824 0x109229: main (memory_deque.cpp:10)
+ n1: 89424 0x109209: allocate (new_allocator.h:114)
+  n1: 89424 0x109209: allocate (alloc_traits.h:443)
+   n1: 89424 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 89424 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 89424 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 89424 0x109209: deque (stl_deque.h:949)
+       n0: 89424 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 36288 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=4588482
+mem_heap_B=5942320
+mem_heap_extra_B=92968
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5942320 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5743616 0x109229: allocate (new_allocator.h:114)
+  n1: 5743616 0x109229: allocate (alloc_traits.h:443)
+   n1: 5743616 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 5743616 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 5743616 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 5743616 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 5743616 0x109229: deque (stl_deque.h:949)
+        n0: 5743616 0x109229: main (memory_deque.cpp:10)
+ n1: 92016 0x109209: allocate (new_allocator.h:114)
+  n1: 92016 0x109209: allocate (alloc_traits.h:443)
+   n1: 92016 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 92016 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 92016 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 92016 0x109209: deque (stl_deque.h:949)
+       n0: 92016 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 33984 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=4653202
+mem_heap_B=6104400
+mem_heap_extra_B=95496
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6104400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5905408 0x109229: allocate (new_allocator.h:114)
+  n1: 5905408 0x109229: allocate (alloc_traits.h:443)
+   n1: 5905408 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 5905408 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 5905408 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 5905408 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 5905408 0x109229: deque (stl_deque.h:949)
+        n0: 5905408 0x109229: main (memory_deque.cpp:10)
+ n1: 94608 0x109209: allocate (new_allocator.h:114)
+  n1: 94608 0x109209: allocate (alloc_traits.h:443)
+   n1: 94608 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 94608 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 94608 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 94608 0x109209: deque (stl_deque.h:949)
+       n0: 94608 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 31680 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=4717922
+mem_heap_B=6266480
+mem_heap_extra_B=98024
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6266480 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6067200 0x109229: allocate (new_allocator.h:114)
+  n1: 6067200 0x109229: allocate (alloc_traits.h:443)
+   n1: 6067200 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 6067200 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 6067200 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 6067200 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 6067200 0x109229: deque (stl_deque.h:949)
+        n0: 6067200 0x109229: main (memory_deque.cpp:10)
+ n1: 97200 0x109209: allocate (new_allocator.h:114)
+  n1: 97200 0x109209: allocate (alloc_traits.h:443)
+   n1: 97200 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 97200 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 97200 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 97200 0x109209: deque (stl_deque.h:949)
+       n0: 97200 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 29376 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=4782642
+mem_heap_B=6428560
+mem_heap_extra_B=100552
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6428560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6228992 0x109229: allocate (new_allocator.h:114)
+  n1: 6228992 0x109229: allocate (alloc_traits.h:443)
+   n1: 6228992 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 6228992 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 6228992 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 6228992 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 6228992 0x109229: deque (stl_deque.h:949)
+        n0: 6228992 0x109229: main (memory_deque.cpp:10)
+ n1: 99792 0x109209: allocate (new_allocator.h:114)
+  n1: 99792 0x109209: allocate (alloc_traits.h:443)
+   n1: 99792 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 99792 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 99792 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 99792 0x109209: deque (stl_deque.h:949)
+       n0: 99792 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 27072 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=4847362
+mem_heap_B=6590640
+mem_heap_extra_B=103080
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6590640 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6390784 0x109229: allocate (new_allocator.h:114)
+  n1: 6390784 0x109229: allocate (alloc_traits.h:443)
+   n1: 6390784 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 6390784 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 6390784 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 6390784 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 6390784 0x109229: deque (stl_deque.h:949)
+        n0: 6390784 0x109229: main (memory_deque.cpp:10)
+ n1: 102384 0x109209: allocate (new_allocator.h:114)
+  n1: 102384 0x109209: allocate (alloc_traits.h:443)
+   n1: 102384 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 102384 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 102384 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 102384 0x109209: deque (stl_deque.h:949)
+       n0: 102384 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 24768 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=4912082
+mem_heap_B=6752720
+mem_heap_extra_B=105608
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6752720 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6552576 0x109229: allocate (new_allocator.h:114)
+  n1: 6552576 0x109229: allocate (alloc_traits.h:443)
+   n1: 6552576 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 6552576 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 6552576 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 6552576 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 6552576 0x109229: deque (stl_deque.h:949)
+        n0: 6552576 0x109229: main (memory_deque.cpp:10)
+ n1: 104976 0x109209: allocate (new_allocator.h:114)
+  n1: 104976 0x109209: allocate (alloc_traits.h:443)
+   n1: 104976 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 104976 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 104976 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 104976 0x109209: deque (stl_deque.h:949)
+       n0: 104976 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 22464 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=4976802
+mem_heap_B=6914800
+mem_heap_extra_B=108136
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6914800 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6714368 0x109229: allocate (new_allocator.h:114)
+  n1: 6714368 0x109229: allocate (alloc_traits.h:443)
+   n1: 6714368 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 6714368 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 6714368 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 6714368 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 6714368 0x109229: deque (stl_deque.h:949)
+        n0: 6714368 0x109229: main (memory_deque.cpp:10)
+ n1: 107568 0x109209: allocate (new_allocator.h:114)
+  n1: 107568 0x109209: allocate (alloc_traits.h:443)
+   n1: 107568 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 107568 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 107568 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 107568 0x109209: deque (stl_deque.h:949)
+       n0: 107568 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 20160 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=5041522
+mem_heap_B=7076880
+mem_heap_extra_B=110664
+mem_stacks_B=0
+heap_tree=detailed
+n4: 7076880 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6876160 0x109229: allocate (new_allocator.h:114)
+  n1: 6876160 0x109229: allocate (alloc_traits.h:443)
+   n1: 6876160 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 6876160 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 6876160 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 6876160 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 6876160 0x109229: deque (stl_deque.h:949)
+        n0: 6876160 0x109229: main (memory_deque.cpp:10)
+ n1: 110160 0x109209: allocate (new_allocator.h:114)
+  n1: 110160 0x109209: allocate (alloc_traits.h:443)
+   n1: 110160 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 110160 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 110160 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 110160 0x109209: deque (stl_deque.h:949)
+       n0: 110160 0x109209: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 17856 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=5106242
+mem_heap_B=7238960
+mem_heap_extra_B=113192
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7238960 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7037952 0x109229: allocate (new_allocator.h:114)
+  n1: 7037952 0x109229: allocate (alloc_traits.h:443)
+   n1: 7037952 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 7037952 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 7037952 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 7037952 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 7037952 0x109229: deque (stl_deque.h:949)
+        n0: 7037952 0x109229: main (memory_deque.cpp:10)
+ n1: 112752 0x109209: allocate (new_allocator.h:114)
+  n1: 112752 0x109209: allocate (alloc_traits.h:443)
+   n1: 112752 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 112752 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 112752 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 112752 0x109209: deque (stl_deque.h:949)
+       n0: 112752 0x109209: main (memory_deque.cpp:10)
+ n0: 88256 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=5170962
+mem_heap_B=7401040
+mem_heap_extra_B=115720
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7401040 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7199744 0x109229: allocate (new_allocator.h:114)
+  n1: 7199744 0x109229: allocate (alloc_traits.h:443)
+   n1: 7199744 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 7199744 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 7199744 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 7199744 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 7199744 0x109229: deque (stl_deque.h:949)
+        n0: 7199744 0x109229: main (memory_deque.cpp:10)
+ n1: 115344 0x109209: allocate (new_allocator.h:114)
+  n1: 115344 0x109209: allocate (alloc_traits.h:443)
+   n1: 115344 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 115344 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 115344 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 115344 0x109209: deque (stl_deque.h:949)
+       n0: 115344 0x109209: main (memory_deque.cpp:10)
+ n0: 85952 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=5235682
+mem_heap_B=7563120
+mem_heap_extra_B=118248
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7563120 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7361536 0x109229: allocate (new_allocator.h:114)
+  n1: 7361536 0x109229: allocate (alloc_traits.h:443)
+   n1: 7361536 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 7361536 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 7361536 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 7361536 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 7361536 0x109229: deque (stl_deque.h:949)
+        n0: 7361536 0x109229: main (memory_deque.cpp:10)
+ n1: 117936 0x109209: allocate (new_allocator.h:114)
+  n1: 117936 0x109209: allocate (alloc_traits.h:443)
+   n1: 117936 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 117936 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 117936 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 117936 0x109209: deque (stl_deque.h:949)
+       n0: 117936 0x109209: main (memory_deque.cpp:10)
+ n0: 83648 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=5300402
+mem_heap_B=7725200
+mem_heap_extra_B=120776
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7725200 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7523328 0x109229: allocate (new_allocator.h:114)
+  n1: 7523328 0x109229: allocate (alloc_traits.h:443)
+   n1: 7523328 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 7523328 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 7523328 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 7523328 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 7523328 0x109229: deque (stl_deque.h:949)
+        n0: 7523328 0x109229: main (memory_deque.cpp:10)
+ n1: 120528 0x109209: allocate (new_allocator.h:114)
+  n1: 120528 0x109209: allocate (alloc_traits.h:443)
+   n1: 120528 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 120528 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 120528 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 120528 0x109209: deque (stl_deque.h:949)
+       n0: 120528 0x109209: main (memory_deque.cpp:10)
+ n0: 81344 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=5365122
+mem_heap_B=7887280
+mem_heap_extra_B=123304
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7887280 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7685120 0x109229: allocate (new_allocator.h:114)
+  n1: 7685120 0x109229: allocate (alloc_traits.h:443)
+   n1: 7685120 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 7685120 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 7685120 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 7685120 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 7685120 0x109229: deque (stl_deque.h:949)
+        n0: 7685120 0x109229: main (memory_deque.cpp:10)
+ n1: 123120 0x109209: allocate (new_allocator.h:114)
+  n1: 123120 0x109209: allocate (alloc_traits.h:443)
+   n1: 123120 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 123120 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 123120 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 123120 0x109209: deque (stl_deque.h:949)
+       n0: 123120 0x109209: main (memory_deque.cpp:10)
+ n0: 79040 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=5429842
+mem_heap_B=8049360
+mem_heap_extra_B=125832
+mem_stacks_B=0
+heap_tree=detailed
+n3: 8049360 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7846912 0x109229: allocate (new_allocator.h:114)
+  n1: 7846912 0x109229: allocate (alloc_traits.h:443)
+   n1: 7846912 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 7846912 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 7846912 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 7846912 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 7846912 0x109229: deque (stl_deque.h:949)
+        n0: 7846912 0x109229: main (memory_deque.cpp:10)
+ n1: 125712 0x109209: allocate (new_allocator.h:114)
+  n1: 125712 0x109209: allocate (alloc_traits.h:443)
+   n1: 125712 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 125712 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 125712 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 125712 0x109209: deque (stl_deque.h:949)
+       n0: 125712 0x109209: main (memory_deque.cpp:10)
+ n0: 76736 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=5510742
+mem_heap_B=8251960
+mem_heap_extra_B=128992
+mem_stacks_B=0
+heap_tree=peak
+n3: 8251960 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8049152 0x109229: allocate (new_allocator.h:114)
+  n1: 8049152 0x109229: allocate (alloc_traits.h:443)
+   n1: 8049152 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 8049152 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 8049152 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 8049152 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 8049152 0x109229: deque (stl_deque.h:949)
+        n0: 8049152 0x109229: main (memory_deque.cpp:10)
+ n1: 128952 0x109209: allocate (new_allocator.h:114)
+  n1: 128952 0x109209: allocate (alloc_traits.h:443)
+   n1: 128952 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 128952 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 128952 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 128952 0x109209: deque (stl_deque.h:949)
+       n0: 128952 0x109209: main (memory_deque.cpp:10)
+ n0: 73856 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=5543126
+mem_heap_B=8041232
+mem_heap_extra_B=125656
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=5596060
+mem_heap_B=7220336
+mem_heap_extra_B=112712
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=5648994
+mem_heap_B=6399440
+mem_heap_extra_B=99768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=5701928
+mem_heap_B=5578544
+mem_heap_extra_B=86824
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=5754851
+mem_heap_B=4757648
+mem_heap_extra_B=73880
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=5807753
+mem_heap_B=3937400
+mem_heap_extra_B=60952
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=5860687
+mem_heap_B=3116504
+mem_heap_extra_B=48008
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=5913621
+mem_heap_B=2295608
+mem_heap_extra_B=35064
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=5966555
+mem_heap_B=1474712
+mem_heap_extra_B=22120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=6019489
+mem_heap_B=653816
+mem_heap_extra_B=9176
+mem_stacks_B=0
+heap_tree=detailed
+n4: 653816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 571392 0x109229: allocate (new_allocator.h:114)
+  n1: 571392 0x109229: allocate (alloc_traits.h:443)
+   n1: 571392 0x109229: _M_allocate_node (stl_deque.h:620)
+    n1: 571392 0x109229: _M_create_nodes (stl_deque.h:745)
+     n1: 571392 0x109229: _M_initialize_map (stl_deque.h:719)
+      n1: 571392 0x109229: _Deque_base (stl_deque.h:518)
+       n1: 571392 0x109229: deque (stl_deque.h:949)
+        n0: 571392 0x109229: main (memory_deque.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 9720 0x109209: allocate (new_allocator.h:114)
+  n1: 9720 0x109209: allocate (alloc_traits.h:443)
+   n1: 9720 0x109209: _M_allocate_map (stl_deque.h:634)
+    n1: 9720 0x109209: _M_initialize_map (stl_deque.h:707)
+     n1: 9720 0x109209: _Deque_base (stl_deque.h:518)
+      n1: 9720 0x109209: deque (stl_deque.h:949)
+       n0: 9720 0x109209: main (memory_deque.cpp:10)
+ n0: 0 in 2 places, all below massif's threshold (1.00%)

@@ -1,0 +1,666 @@
+desc: --massif-out-file=/output/massif.out.memory.buffer
+cmd: ./memory_buffer
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2267538
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2268715
+mem_heap_B=72712
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2268887
+mem_heap_B=72744
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2269059
+mem_heap_B=72776
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2269231
+mem_heap_B=72808
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2269403
+mem_heap_B=72840
+mem_heap_extra_B=280
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2269577
+mem_heap_B=78872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2270870
+mem_heap_B=78872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 78872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 6008 0x109189: allocate (new_allocator.h:114)
+  n1: 6008 0x109189: allocate (alloc_traits.h:443)
+   n1: 6008 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 6008 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 6008 0x109189: main (memory_buffer.cpp:10)
+ n0: 160 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=2270920
+mem_heap_B=84872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2272213
+mem_heap_B=84872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 84872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 12016 0x109189: allocate (new_allocator.h:114)
+  n1: 12016 0x109189: allocate (alloc_traits.h:443)
+   n1: 12016 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 12016 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 12016 0x109189: main (memory_buffer.cpp:10)
+ n0: 152 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=2272263
+mem_heap_B=90872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=2273556
+mem_heap_B=90872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 90872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 18024 0x109189: allocate (new_allocator.h:114)
+  n1: 18024 0x109189: allocate (alloc_traits.h:443)
+   n1: 18024 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 18024 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 18024 0x109189: main (memory_buffer.cpp:10)
+ n0: 144 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=2273606
+mem_heap_B=96872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=2274899
+mem_heap_B=96872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 96872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 24032 0x109189: allocate (new_allocator.h:114)
+  n1: 24032 0x109189: allocate (alloc_traits.h:443)
+   n1: 24032 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 24032 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 24032 0x109189: main (memory_buffer.cpp:10)
+ n0: 136 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=2274949
+mem_heap_B=102872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=2276242
+mem_heap_B=102872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 102872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 30040 0x109189: allocate (new_allocator.h:114)
+  n1: 30040 0x109189: allocate (alloc_traits.h:443)
+   n1: 30040 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 30040 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 30040 0x109189: main (memory_buffer.cpp:10)
+ n0: 128 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=2276292
+mem_heap_B=108872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2277585
+mem_heap_B=108872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 108872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 36048 0x109189: allocate (new_allocator.h:114)
+  n1: 36048 0x109189: allocate (alloc_traits.h:443)
+   n1: 36048 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 36048 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 36048 0x109189: main (memory_buffer.cpp:10)
+ n0: 120 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=2277635
+mem_heap_B=114872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=2278928
+mem_heap_B=114872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 114872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 42056 0x109189: allocate (new_allocator.h:114)
+  n1: 42056 0x109189: allocate (alloc_traits.h:443)
+   n1: 42056 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 42056 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 42056 0x109189: main (memory_buffer.cpp:10)
+ n0: 112 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=2278978
+mem_heap_B=120872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=2280271
+mem_heap_B=120872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 120872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 48064 0x109189: allocate (new_allocator.h:114)
+  n1: 48064 0x109189: allocate (alloc_traits.h:443)
+   n1: 48064 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 48064 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 48064 0x109189: main (memory_buffer.cpp:10)
+ n0: 104 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=2280321
+mem_heap_B=126872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=2281614
+mem_heap_B=126872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 126872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 54072 0x109189: allocate (new_allocator.h:114)
+  n1: 54072 0x109189: allocate (alloc_traits.h:443)
+   n1: 54072 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 54072 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 54072 0x109189: main (memory_buffer.cpp:10)
+ n0: 96 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=2281664
+mem_heap_B=132872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2282957
+mem_heap_B=132872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 132872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 60080 0x109189: allocate (new_allocator.h:114)
+  n1: 60080 0x109189: allocate (alloc_traits.h:443)
+   n1: 60080 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 60080 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 60080 0x109189: main (memory_buffer.cpp:10)
+ n0: 88 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=2283007
+mem_heap_B=138872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=2284300
+mem_heap_B=138872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 138872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 66088 0x109189: allocate (new_allocator.h:114)
+  n1: 66088 0x109189: allocate (alloc_traits.h:443)
+   n1: 66088 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 66088 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 66088 0x109189: main (memory_buffer.cpp:10)
+ n0: 80 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=2284350
+mem_heap_B=144872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=2285643
+mem_heap_B=144872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 144872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 72096 0x109189: allocate (new_allocator.h:114)
+  n1: 72096 0x109189: allocate (alloc_traits.h:443)
+   n1: 72096 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 72096 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 72096 0x109189: main (memory_buffer.cpp:10)
+ n0: 72 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=2285693
+mem_heap_B=150872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2286986
+mem_heap_B=150872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 150872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 78104 0x109189: allocate (new_allocator.h:114)
+  n1: 78104 0x109189: allocate (alloc_traits.h:443)
+   n1: 78104 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 78104 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 78104 0x109189: main (memory_buffer.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 64 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=2287036
+mem_heap_B=156872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2288329
+mem_heap_B=156872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 156872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 84112 0x109189: allocate (new_allocator.h:114)
+  n1: 84112 0x109189: allocate (alloc_traits.h:443)
+   n1: 84112 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 84112 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 84112 0x109189: main (memory_buffer.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 56 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=2288379
+mem_heap_B=162872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2289672
+mem_heap_B=162872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 162872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 90120 0x109189: allocate (new_allocator.h:114)
+  n1: 90120 0x109189: allocate (alloc_traits.h:443)
+   n1: 90120 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 90120 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 90120 0x109189: main (memory_buffer.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 48 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=2289722
+mem_heap_B=168872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2291015
+mem_heap_B=168872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 168872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 96128 0x109189: allocate (new_allocator.h:114)
+  n1: 96128 0x109189: allocate (alloc_traits.h:443)
+   n1: 96128 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 96128 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 96128 0x109189: main (memory_buffer.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 40 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=2291065
+mem_heap_B=174872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2292358
+mem_heap_B=174872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 174872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 102136 0x109189: allocate (new_allocator.h:114)
+  n1: 102136 0x109189: allocate (alloc_traits.h:443)
+   n1: 102136 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 102136 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 102136 0x109189: main (memory_buffer.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 32 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=2292408
+mem_heap_B=180872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2293701
+mem_heap_B=180872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 180872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 108144 0x109189: allocate (new_allocator.h:114)
+  n1: 108144 0x109189: allocate (alloc_traits.h:443)
+   n1: 108144 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 108144 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 108144 0x109189: main (memory_buffer.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 24 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=2293751
+mem_heap_B=186872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2295044
+mem_heap_B=186872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=detailed
+n3: 186872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 114152 0x109189: allocate (new_allocator.h:114)
+  n1: 114152 0x109189: allocate (alloc_traits.h:443)
+   n1: 114152 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 114152 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 114152 0x109189: main (memory_buffer.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 16 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=2295094
+mem_heap_B=192872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2296387
+mem_heap_B=192872
+mem_heap_extra_B=344
+mem_stacks_B=0
+heap_tree=peak
+n3: 192872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 120160 0x109189: allocate (new_allocator.h:114)
+  n1: 120160 0x109189: allocate (alloc_traits.h:443)
+   n1: 120160 0x109189: ring_buffer_base (ring_buffer.hpp:73)
+    n1: 120160 0x109189: ring_buffer (ring_buffer.hpp:618)
+     n0: 120160 0x109189: main (memory_buffer.cpp:10)
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 8 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=2296643
+mem_heap_B=150808
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2296779
+mem_heap_B=126776
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2297017
+mem_heap_B=84720
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2297085
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=detailed
+n2: 72704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48EBA69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 0 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=2302997
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
