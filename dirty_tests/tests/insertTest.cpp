@@ -7,15 +7,11 @@
 
 template <typename Container>
 void BM_InsertAtBegin(benchmark::State& state) {
-    const long long test_value = 652;
-    const size_t size = static_cast<size_t>(state.range(0));
+    const long long test_value = 42;
     
-    //state.PauseTiming();
-    Container container(size); // Create container of specified size
-    //state.ResumeTiming();
+    Container container(state.range(0));
 
     for (auto _ : state) {
-        // This will work if the container supports insert at the beginning
         container.insert(container.begin(), test_value);
     }
 }
@@ -23,14 +19,10 @@ void BM_InsertAtBegin(benchmark::State& state) {
 template <typename Container>
 void BM_InsertAtEnd(benchmark::State& state) {
     const long long test_value = 42;
-    const int size = static_cast<int>(state.range(0));
     
-    //state.PauseTiming();
-    Container container(size); // Create container of specified size
-    //state.ResumeTiming();
+    Container container(state.range(0));
 
     for (auto _ : state) {
-        // This will work if the container supports insert at the beginning
         container.insert(container.end(), test_value);
     }
 }
@@ -63,7 +55,6 @@ void RegisterBenchmark(const std::string& name) {
 }
 
 int main(int argc, char** argv) {
-    // Register benchmarks for different container types
     RegisterInsertBeginBenchmark<std::vector<long long>>("BM_Vector_InsertAtBegin");
     RegisterInsertBeginBenchmark<std::deque<long long>>("BM_Deque_InsertAtBegin");
     RegisterInsertBeginBenchmark<std::list<long long>>("BM_List_InsertAtBegin");

@@ -8,14 +8,10 @@
 template <typename Container>
 void BM_PushBack(benchmark::State& state) {
     const long long test_value = 652;
-    const size_t size = static_cast<size_t>(state.range(0));
     
-    //state.PauseTiming();
-    Container container(size); // Create container of specified size
-    //state.ResumeTiming();
+    Container container(state.range(0));
 
     for (auto _ : state) {
-        // This will work if the container supports insert at the beginning
         container.push_back(test_value);
     }
 }
@@ -23,14 +19,10 @@ void BM_PushBack(benchmark::State& state) {
 template <typename Container>
 void BM_PushFront(benchmark::State& state) {
     const long long test_value = 42;
-    const int size = static_cast<int>(state.range(0));
     
-    //state.PauseTiming();
-    Container container(size); // Create container of specified size
-    //state.ResumeTiming();
+    Container container(state.range(0));
 
     for (auto _ : state) {
-        // This will work if the container supports insert at the beginning
         container.push_front(test_value);
     }
 }

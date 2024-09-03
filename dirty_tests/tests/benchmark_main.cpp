@@ -1,6 +1,0 @@
-//#include "accessTest.cpp"
-//#include "constructionTest.cpp"
-//#include "findTest.cpp"
-//#include "insertTest.cpp"
-#include "pushTest.cpp"
-//#include "reserveTest.cpp"

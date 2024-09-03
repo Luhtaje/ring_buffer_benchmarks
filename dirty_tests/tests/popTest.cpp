@@ -10,12 +10,17 @@ void BM_PopBack(benchmark::State& state) {
 
     const size_t size = static_cast<size_t>(state.range(0));
 
+
+    
     for (auto _ : state) {
         state.PauseTiming();
         Container container(size);
         state.ResumeTiming();
-
-        container.pop_back();
+        
+        for(auto i = 0; i < size -1; ++i)
+        {
+            container.pop_back();
+        }
     }
 }
 
@@ -24,12 +29,16 @@ void BM_PopFront(benchmark::State& state) {
 
     const size_t size = static_cast<size_t>(state.range(0));
 
+    
     for (auto _ : state) {
         state.PauseTiming();
         Container container(size);
         state.ResumeTiming();
-
-        container.pop_front();
+        
+        for(auto i = 0; i < size - 1 ; ++i)
+        {
+            container.pop_front();
+        }
     }
 }
 

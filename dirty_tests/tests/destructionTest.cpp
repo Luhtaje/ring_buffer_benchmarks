@@ -9,10 +9,8 @@ template <typename Container>
 void BM_destruction(benchmark::State& state) {
     const int size = static_cast<int>(state.range(0));
     for (auto _ : state) {
-        state.PauseTiming();
         {
             Container container(size);
-            state.ResumeTiming();
         }
     }
 }
