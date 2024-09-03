@@ -3,7 +3,7 @@
 
 int main()
 {
-std::array<ring_buffer<int>, 100000> buffers;
+std::array<ring_buffer<int>, 1000> buffers;
 
     for(auto& v : buffers)
     {

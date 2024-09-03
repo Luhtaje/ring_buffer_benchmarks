@@ -3,7 +3,7 @@
 
 int main()
 {
-std::array<std::deque<int>, 100000> deqs;
+std::array<std::deque<int>, 1000> deqs;
 
     for(auto& v : deqs)
     {

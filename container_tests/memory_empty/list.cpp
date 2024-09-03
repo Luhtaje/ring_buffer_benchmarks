@@ -3,7 +3,7 @@
 
 int main()
 {
-std::array<std::list<int>, 100000> lists;
+std::array<std::list<int>, 1000> lists;
 
     for(auto& v : lists)
     {

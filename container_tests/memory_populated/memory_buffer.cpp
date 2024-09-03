@@ -1,6 +1,12 @@
 #include "ring_buffer.hpp"
+#include <array>
 
 int main()
 {
-    ring_buffer<int> buffer(100000, 1);
+std::array<ring_buffer<int>, 20> buffers;
+
+    for(auto& v : buffers)
+    {
+        v = ring_buffer<int>(1000, 1);   
+    }
 }

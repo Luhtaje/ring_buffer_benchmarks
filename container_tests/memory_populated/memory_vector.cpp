@@ -1,6 +1,12 @@
 #include <vector>
+#include <array>
 
 int main()
 {
-    std::vector<int> vec(100000, 1);
+std::array<std::vector<int>, 20> vectors;
+
+    for(auto& v : vectors)
+    {
+        v = std::vector<int>(1000,1);   
+    }
 }
